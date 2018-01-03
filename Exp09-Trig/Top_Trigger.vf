@@ -1,0 +1,298 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Top_Trigger.vf
+// /___/   /\     Timestamp : 11/30/2016 15:08:30
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/ISE/Exp09-Trig/Top_Trigger.vf -w D:/ISE/Exp09-Trig/Code/Top_Trigger.sch
+//Design Name: Top_Trigger
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MB_DFF_MUSER_Top_Trigger(Cp, 
+                                D, 
+                                Rn, 
+                                Sn, 
+                                Q, 
+                                Qn);
+
+    input Cp;
+    input D;
+    input Rn;
+    input Sn;
+   output Q;
+   output Qn;
+   
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_22;
+   wire Q_DUMMY;
+   wire Qn_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qn = Qn_DUMMY;
+   NAND3  XLXI_2 (.I0(XLXN_12), 
+                 .I1(Sn), 
+                 .I2(XLXN_11), 
+                 .O(XLXN_13));
+   NAND3  XLXI_3 (.I0(XLXN_22), 
+                 .I1(Rn), 
+                 .I2(D), 
+                 .O(XLXN_12));
+   NAND3  XLXI_4 (.I0(Rn), 
+                 .I1(Cp), 
+                 .I2(XLXN_13), 
+                 .O(XLXN_11));
+   NAND3  XLXI_5 (.I0(Cp), 
+                 .I1(XLXN_12), 
+                 .I2(XLXN_11), 
+                 .O(XLXN_22));
+   NAND3  XLXI_6 (.I0(Qn_DUMMY), 
+                 .I1(XLXN_11), 
+                 .I2(Sn), 
+                 .O(Q_DUMMY));
+   NAND3  XLXI_7 (.I0(Rn), 
+                 .I1(XLXN_22), 
+                 .I2(Q_DUMMY), 
+                 .O(Qn_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module RS_NAND_MUSER_Top_Trigger(Rn, 
+                                 Sn, 
+                                 Q, 
+                                 Qn);
+
+    input Rn;
+    input Sn;
+   output Q;
+   output Qn;
+   
+   wire Q_DUMMY;
+   wire Qn_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qn = Qn_DUMMY;
+   NAND2  XLXI_1 (.I0(Qn_DUMMY), 
+                 .I1(Sn), 
+                 .O(Q_DUMMY));
+   NAND2  XLXI_2 (.I0(Rn), 
+                 .I1(Q_DUMMY), 
+                 .O(Qn_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module RS_EN_MUSER_Top_Trigger(C, 
+                               R, 
+                               S, 
+                               Q, 
+                               Qn);
+
+    input C;
+    input R;
+    input S;
+   output Q;
+   output Qn;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   
+   RS_NAND_MUSER_Top_Trigger  XLXI_1 (.Rn(XLXN_5), 
+                                     .Sn(XLXN_4), 
+                                     .Q(Q), 
+                                     .Qn(Qn));
+   NAND2  XLXI_2 (.I0(C), 
+                 .I1(S), 
+                 .O(XLXN_4));
+   NAND2  XLXI_3 (.I0(R), 
+                 .I1(C), 
+                 .O(XLXN_5));
+endmodule
+`timescale 1ns / 1ps
+
+module D_EN_MUSER_Top_Trigger(C, 
+                              D, 
+                              Q, 
+                              Qn);
+
+    input C;
+    input D;
+   output Q;
+   output Qn;
+   
+   wire XLXN_5;
+   
+   RS_EN_MUSER_Top_Trigger  XLXI_1 (.C(C), 
+                                   .R(XLXN_5), 
+                                   .S(D), 
+                                   .Q(Q), 
+                                   .Qn(Qn));
+   INV  XLXI_3 (.I(D), 
+               .O(XLXN_5));
+endmodule
+`timescale 1ns / 1ps
+
+module D_Trig_MUSER_Top_Trigger(C, 
+                                D, 
+                                Q, 
+                                Qn);
+
+    input C;
+    input D;
+   output Q;
+   output Qn;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_7;
+   
+   D_EN_MUSER_Top_Trigger  XLXI_1 (.C(C), 
+                                  .D(D), 
+                                  .Q(XLXN_3), 
+                                  .Qn(XLXN_4));
+   RS_EN_MUSER_Top_Trigger  XLXI_2 (.C(XLXN_7), 
+                                   .R(XLXN_4), 
+                                   .S(XLXN_3), 
+                                   .Q(Q), 
+                                   .Qn(Qn));
+   INV  XLXI_3 (.I(C), 
+               .O(XLXN_7));
+endmodule
+`timescale 1ns / 1ps
+
+module RS_Trig_MUSER_Top_Trigger(C, 
+                                 R, 
+                                 S, 
+                                 Q, 
+                                 Qn, 
+                                 Y);
+
+    input C;
+    input R;
+    input S;
+   output Q;
+   output Qn;
+   output Y;
+   
+   wire XLXN_5;
+   wire XLXN_8;
+   wire Y_DUMMY;
+   
+   assign Y = Y_DUMMY;
+   RS_EN_MUSER_Top_Trigger  XLXI_1 (.C(C), 
+                                   .R(R), 
+                                   .S(S), 
+                                   .Q(Y_DUMMY), 
+                                   .Qn(XLXN_5));
+   RS_EN_MUSER_Top_Trigger  XLXI_2 (.C(XLXN_8), 
+                                   .R(XLXN_5), 
+                                   .S(Y_DUMMY), 
+                                   .Q(Q), 
+                                   .Qn(Qn));
+   INV  XLXI_3 (.I(C), 
+               .O(XLXN_8));
+endmodule
+`timescale 1ns / 1ps
+
+module Top_Trigger(clk_100mhz, 
+                   K_COL, 
+                   RSTN, 
+                   SW, 
+                   Buzzer, 
+                   K_ROW, 
+                   LED, 
+                   LEDCLK, 
+                   LEDDT, 
+                   LEDED, 
+                   LEDEN);
+
+    input clk_100mhz;
+    input [3:0] K_COL;
+    input RSTN;
+    input [15:0] SW;
+   output Buzzer;
+   output [4:0] K_ROW;
+   output [7:0] LED;
+   output LEDCLK;
+   output LEDDT;
+   output LEDED;
+   output LEDEN;
+   
+   wire [3:0] BTN_OK;
+   wire CK;
+   wire [31:0] Div;
+   wire N0;
+   wire [31:0] PD;
+   wire rst;
+   wire [15:0] SW_OK;
+   wire V5;
+   
+   clkdiv  XLXI_1 (.clk(clk_100mhz), 
+                  .pulse(BTN_OK[0]), 
+                  .rst(rst), 
+                  .Sel_CLK(SW_OK[2]), 
+                  .CK(CK), 
+                  .clkdiv(Div[31:0]));
+   SAnti_jitter  XLXI_2 (.clk(clk_100mhz), 
+                        .Key_y(K_COL[3:0]), 
+                        .readn(), 
+                        .RSTN(RSTN), 
+                        .SW(SW[15:0]), 
+                        .BTN_OK(BTN_OK[3:0]), 
+                        .CR(), 
+                        .Key_out(), 
+                        .Key_ready(), 
+                        .Key_x(K_ROW[4:0]), 
+                        .pulse_out(), 
+                        .rst(rst), 
+                        .SW_OK(SW_OK[15:0]));
+   SPLIO  XLXI_3 (.clk(clk_100mhz), 
+                 .EN(V5), 
+                 .P_Data(PD[31:0]), 
+                 .rst(rst), 
+                 .Start(Div[20]), 
+                 .GPIOf0(), 
+                 .LED(), 
+                 .led_clk(LEDCLK), 
+                 .led_clrn(LEDED), 
+                 .LED_PEN(LEDEN), 
+                 .led_sout(LEDDT));
+   PLIO  XLXI_4 (.clk(clk_100mhz), 
+                .EN(V5), 
+                .PData_in(PD[31:0]), 
+                .rst(rst), 
+                .GPIOf0(), 
+                .LED(LED[7:0]));
+   RS_Trig_MUSER_Top_Trigger  XLXI_5 (.C(CK), 
+                                     .R(SW_OK[1]), 
+                                     .S(SW_OK[0]), 
+                                     .Q(PD[0]), 
+                                     .Qn(PD[1]), 
+                                     .Y(PD[2]));
+   D_Trig_MUSER_Top_Trigger  XLXI_6 (.C(CK), 
+                                    .D(SW_OK[3]), 
+                                    .Q(PD[3]), 
+                                    .Qn(PD[4]));
+   MB_DFF_MUSER_Top_Trigger  XLXI_7 (.Cp(CK), 
+                                    .D(SW_OK[4]), 
+                                    .Rn(SW_OK[6]), 
+                                    .Sn(SW_OK[5]), 
+                                    .Q(PD[5]), 
+                                    .Qn(PD[6]));
+   VCC  XLXI_8 (.P(V5));
+   GND  XLXI_9 (.G(N0));
+   BUF  XLXI_10 (.I(V5), 
+                .O(Buzzer));
+endmodule

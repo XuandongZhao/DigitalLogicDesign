@@ -1,0 +1,119 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CLA4b.vf
+// /___/   /\     Timestamp : 11/21/2016 22:36:09
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog F:/MyDocuments/logic/Exp081-ADC32/CLA4b.vf -w F:/MyDocuments/logic/Exp081-ADC32/CLA4b.sch
+//Design Name: CLA4b
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module CLA4b(Ci, 
+             G0, 
+             G1, 
+             G2, 
+             G3, 
+             P0, 
+             P1, 
+             P2, 
+             P3, 
+             C1, 
+             C2, 
+             C3, 
+             GG, 
+             GP);
+
+    input Ci;
+    input G0;
+    input G1;
+    input G2;
+    input G3;
+    input P0;
+    input P1;
+    input P2;
+    input P3;
+   output C1;
+   output C2;
+   output C3;
+   output GG;
+   output GP;
+   
+   wire XLXN_7;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   
+   AND2  XLXI_1 (.I0(P0), 
+                .I1(Ci), 
+                .O(XLXN_7));
+   AND2  XLXI_2 (.I0(G0), 
+                .I1(P1), 
+                .O(XLXN_10));
+   AND2  XLXI_3 (.I0(P2), 
+                .I1(G1), 
+                .O(XLXN_14));
+   AND2  XLXI_4 (.I0(P3), 
+                .I1(G2), 
+                .O(XLXN_25));
+   AND3  XLXI_5 (.I0(P1), 
+                .I1(P0), 
+                .I2(Ci), 
+                .O(XLXN_9));
+   AND3  XLXI_6 (.I0(P2), 
+                .I1(P1), 
+                .I2(G0), 
+                .O(XLXN_13));
+   AND4  XLXI_7 (.I0(P2), 
+                .I1(P1), 
+                .I2(P0), 
+                .I3(Ci), 
+                .O(XLXN_12));
+   AND4  XLXI_8 (.I0(P3), 
+                .I1(P2), 
+                .I2(P1), 
+                .I3(P0), 
+                .O(GP));
+   AND4  XLXI_9 (.I0(P3), 
+                .I1(P2), 
+                .I2(P1), 
+                .I3(G0), 
+                .O(XLXN_23));
+   AND3  XLXI_10 (.I0(P3), 
+                 .I1(P2), 
+                 .I2(G1), 
+                 .O(XLXN_24));
+   OR2  XLXI_11 (.I0(G0), 
+                .I1(XLXN_7), 
+                .O(C1));
+   OR3  XLXI_12 (.I0(G1), 
+                .I1(XLXN_10), 
+                .I2(XLXN_9), 
+                .O(C2));
+   OR4  XLXI_13 (.I0(G2), 
+                .I1(XLXN_14), 
+                .I2(XLXN_13), 
+                .I3(XLXN_12), 
+                .O(C3));
+   OR4  XLXI_14 (.I0(G3), 
+                .I1(XLXN_25), 
+                .I2(XLXN_24), 
+                .I3(XLXN_23), 
+                .O(GG));
+endmodule

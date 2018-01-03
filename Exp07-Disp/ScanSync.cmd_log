@@ -1,0 +1,9 @@
+sch2hdl -intstyle ise -family kintex7 -verilog ScanSync_drc.vf -w D:/ISE/Exp07-Disp/Code/ScanSync.sch 
+sch2sym -intstyle ise -family kintex7 -refsym ScanSync D:/ISE/Exp07-Disp/Code/ScanSync.sch D:/ISE/Exp07-Disp/ScanSync.sym 
+sch2sym -intstyle ise -family kintex7 -refsym ScanSync D:/ISE/Exp07-Disp/Code/ScanSync.sch D:/ISE/Exp07-Disp/ScanSync.sym 
+sch2sym -intstyle ise -family kintex7 -refsym ScanSync D:/ISE/Exp07-Disp/Code/ScanSync.sch D:/ISE/Exp07-Disp/ScanSync.sym 
+sch2sym -intstyle ise -family kintex7 -refsym ScanSync D:/ISE/Exp07-Disp/Code/ScanSync.sch D:/ISE/Exp07-Disp/ScanSync.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog ScanSync_drc.vf -w D:/ISE/Exp07-Disp/Code/ScanSync.sch 
+sch2sym -intstyle ise -family kintex7 -refsym ScanSync D:/ISE/Exp07-Disp/Code/ScanSync.sch D:/ISE/Exp07-Disp/ScanSync.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym ScanSync D:/ISE/Exp07-Disp/Code/ScanSync.sch D:/ISE/Exp07-Disp/ScanSync.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog ScanSync_drc.vf -w D:/ISE/Exp07-Disp/Code/ScanSync.sch 

@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp05_Lamp138/HCT138.vf,-w,D:/ISE/Exp05_Lamp138/Code/HCT138.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp05_Lamp138/Lamp138.vf,-w,D:/ISE/Exp05_Lamp138/Code/Lamp138.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp05_Lamp138/Lamp138.vf,-w,D:/ISE/Exp05_Lamp138/Code/Lamp138.sch

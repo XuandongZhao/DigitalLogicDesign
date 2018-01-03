@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+add instance_name (
+    .ai(ai), 
+    .bi(bi), 
+    .ci(ci), 
+    .si(si), 
+    .co(co), 
+    .Gi(Gi), 
+    .Pi(Pi)
+    );
+
+

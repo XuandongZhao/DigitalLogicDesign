@@ -1,0 +1,4 @@
+verilog work "Code/Multi_8CH32.v"
+verilog work "MUX441.vf"
+verilog work "MUX8T1_32.vf"
+verilog work "MUX8T1_8.vf"

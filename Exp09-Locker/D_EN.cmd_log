@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/ISE/Exp09-Locker/D_EN.xst" -ofn "D:/ISE/Exp09-Locker/D_EN.syr" 
+xst -intstyle ise -ifn "D:/ISE/Exp09-Locker/D_EN.xst" -ofn "D:/ISE/Exp09-Locker/D_EN.syr" 

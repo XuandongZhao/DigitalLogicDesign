@@ -1,0 +1,4 @@
+vhdtdtfi -lib work D:/ISE/Exp07-Disp/Code/Anti_jitter.v -lang verilog -prj Exp07-Disp -o Anti_jitter.spl -module Anti_jitter -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Anti_jitter.spl D:/ISE/Exp07-Disp/Anti_jitter.sym 
+vhdtdtfi -lib work D:/ISE/Exp07-Disp/Code/Anti_jitter.v -lang verilog -prj Exp07-Disp -o Anti_jitter.spl -module Anti_jitter -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Anti_jitter.spl D:/ISE/Exp07-Disp/Anti_jitter.sym 

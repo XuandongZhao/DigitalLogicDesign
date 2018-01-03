@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -w -refsym HCT138_sch D:/ISE/FSM/code/HCT138_sch.sch D:/ISE/FSM/HCT138_sch.sym 

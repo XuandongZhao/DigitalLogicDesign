@@ -1,0 +1,27 @@
+Running: D:\Software\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/ISE/Exp09-Trig/D_Trig_D_Trig_sch_tb_isim_beh.exe -prj D:/ISE/Exp09-Trig/D_Trig_D_Trig_sch_tb_beh.prj work.D_Trig_D_Trig_sch_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/ISE/Exp09-Trig/RS_NAND.vf" into library work
+Analyzing Verilog file "D:/ISE/Exp09-Trig/RS_EN.vf" into library work
+Analyzing Verilog file "D:/ISE/Exp09-Trig/D_EN.vf" into library work
+Analyzing Verilog file "D:/ISE/Exp09-Trig/D_Trig.vf" into library work
+Analyzing Verilog file "D:/ISE/Exp09-Trig/Code/D_Trig_test.v" into library work
+Analyzing Verilog file "D:/Software/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module NAND2
+Compiling module RS_NAND_MUSER_D_Trig
+Compiling module RS_EN_MUSER_D_Trig
+Compiling module INV
+Compiling module D_EN_MUSER_D_Trig
+Compiling module D_Trig
+Compiling module D_Trig_D_Trig_sch_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 Verilog Units
+Built simulation executable D:/ISE/Exp09-Trig/D_Trig_D_Trig_sch_tb_isim_beh.exe
+Fuse Memory Usage: 27084 KB
+Fuse CPU Usage: 577 ms

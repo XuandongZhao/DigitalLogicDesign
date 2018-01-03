@@ -1,0 +1,13 @@
+[Inputs]
+ai
+bi
+ci
+[Outputs]
+si
+co
+Gi
+Pi
+[BiDir]
+[ATTRIBUTES]
+VeriModel add
+

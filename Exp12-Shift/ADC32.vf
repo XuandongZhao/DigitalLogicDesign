@@ -1,0 +1,224 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ADC32.vf
+// /___/   /\     Timestamp : 12/25/2016 18:22:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/zxd_CS/LCDF/Top/ADC32.vf -w D:/zxd_CS/LCDF/Top/Code/ADC32.sch
+//Design Name: ADC32
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module add4b_MUSER_ADC32(ai, 
+                         bi, 
+                         C0, 
+                         GG, 
+                         GP, 
+                         s);
+
+    input [3:0] ai;
+    input [3:0] bi;
+    input C0;
+   output GG;
+   output GP;
+   output [3:0] s;
+   
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   
+   add  A0 (.ai(ai[3]), 
+           .bi(bi[3]), 
+           .ci(XLXN_23), 
+           .co(), 
+           .Gi(XLXN_13), 
+           .Pi(XLXN_14), 
+           .si(s[3]));
+   add  A1 (.ai(ai[2]), 
+           .bi(bi[2]), 
+           .ci(XLXN_22), 
+           .co(), 
+           .Gi(XLXN_15), 
+           .Pi(XLXN_16), 
+           .si(s[2]));
+   add  A2 (.ai(ai[1]), 
+           .bi(bi[1]), 
+           .ci(XLXN_21), 
+           .co(), 
+           .Gi(XLXN_17), 
+           .Pi(XLXN_18), 
+           .si(s[1]));
+   add  A3 (.ai(ai[0]), 
+           .bi(bi[0]), 
+           .ci(C0), 
+           .co(), 
+           .Gi(XLXN_19), 
+           .Pi(XLXN_20), 
+           .si(s[0]));
+   CLA  XLXI_5 (.C0(C0), 
+               .G0(XLXN_19), 
+               .G1(XLXN_17), 
+               .G2(XLXN_15), 
+               .G3(XLXN_13), 
+               .P0(XLXN_20), 
+               .P1(XLXN_18), 
+               .P2(XLXN_16), 
+               .P3(XLXN_14), 
+               .C1(XLXN_21), 
+               .C2(XLXN_22), 
+               .C3(XLXN_23), 
+               .GG(GG), 
+               .GP(GP));
+endmodule
+`timescale 1ns / 1ps
+
+module ADC32(a, 
+             b, 
+             C0, 
+             Co, 
+             s);
+
+    input [31:0] a;
+    input [31:0] b;
+    input C0;
+   output Co;
+   output [31:0] s;
+   
+   wire XLXN_34;
+   wire XLXN_35;
+   wire XLXN_36;
+   wire XLXN_37;
+   wire XLXN_38;
+   wire XLXN_39;
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_55;
+   wire XLXN_56;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire XLXN_61;
+   wire XLXN_62;
+   wire XLXN_63;
+   wire XLXN_64;
+   wire XLXN_65;
+   wire XLXN_66;
+   wire XLXN_67;
+   
+   AND2  XLXI_12 (.I0(C0), 
+                 .I1(XLXN_47), 
+                 .O(XLXN_48));
+   OR2  XLXI_13 (.I0(XLXN_49), 
+                .I1(XLXN_48), 
+                .O(XLXN_65));
+   AND2  XLXI_14 (.I0(XLXN_64), 
+                 .I1(XLXN_65), 
+                 .O(XLXN_66));
+   OR2  XLXI_15 (.I0(XLXN_67), 
+                .I1(XLXN_66), 
+                .O(Co));
+   add4b_MUSER_ADC32  XLXI_16 (.ai(a[31:28]), 
+                              .bi(b[31:28]), 
+                              .C0(XLXN_63), 
+                              .GG(XLXN_59), 
+                              .GP(XLXN_60), 
+                              .s(s[31:28]));
+   add4b_MUSER_ADC32  XLXI_17 (.ai(a[27:24]), 
+                              .bi(b[27:24]), 
+                              .C0(XLXN_62), 
+                              .GG(XLXN_58), 
+                              .GP(XLXN_57), 
+                              .s(s[27:24]));
+   add4b_MUSER_ADC32  XLXI_18 (.ai(a[23:20]), 
+                              .bi(b[23:20]), 
+                              .C0(XLXN_61), 
+                              .GG(XLXN_56), 
+                              .GP(XLXN_55), 
+                              .s(s[23:20]));
+   add4b_MUSER_ADC32  XLXI_19 (.ai(a[19:16]), 
+                              .bi(b[19:16]), 
+                              .C0(XLXN_65), 
+                              .GG(XLXN_53), 
+                              .GP(XLXN_54), 
+                              .s(s[19:16]));
+   add4b_MUSER_ADC32  XLXI_20 (.ai(a[15:12]), 
+                              .bi(b[15:12]), 
+                              .C0(XLXN_44), 
+                              .GG(XLXN_40), 
+                              .GP(XLXN_41), 
+                              .s(s[15:12]));
+   add4b_MUSER_ADC32  XLXI_21 (.ai(a[11:8]), 
+                              .bi(b[11:8]), 
+                              .C0(XLXN_43), 
+                              .GG(XLXN_38), 
+                              .GP(XLXN_39), 
+                              .s(s[11:8]));
+   add4b_MUSER_ADC32  XLXI_22 (.ai(a[7:4]), 
+                              .bi(b[7:4]), 
+                              .C0(XLXN_42), 
+                              .GG(XLXN_36), 
+                              .GP(XLXN_37), 
+                              .s(s[7:4]));
+   add4b_MUSER_ADC32  XLXI_23 (.ai(a[3:0]), 
+                              .bi(b[3:0]), 
+                              .C0(C0), 
+                              .GG(XLXN_34), 
+                              .GP(XLXN_35), 
+                              .s(s[3:0]));
+   CLA  XLXI_25 (.C0(XLXN_65), 
+                .G0(XLXN_54), 
+                .G1(XLXN_55), 
+                .G2(XLXN_57), 
+                .G3(XLXN_60), 
+                .P0(XLXN_53), 
+                .P1(XLXN_56), 
+                .P2(XLXN_58), 
+                .P3(XLXN_59), 
+                .C1(XLXN_61), 
+                .C2(XLXN_62), 
+                .C3(XLXN_63), 
+                .GG(XLXN_67), 
+                .GP(XLXN_64));
+   CLA  XLXI_26 (.C0(C0), 
+                .G0(XLXN_35), 
+                .G1(XLXN_37), 
+                .G2(XLXN_39), 
+                .G3(XLXN_41), 
+                .P0(XLXN_34), 
+                .P1(XLXN_36), 
+                .P2(XLXN_38), 
+                .P3(XLXN_40), 
+                .C1(XLXN_42), 
+                .C2(XLXN_43), 
+                .C3(XLXN_44), 
+                .GG(XLXN_49), 
+                .GP(XLXN_47));
+endmodule

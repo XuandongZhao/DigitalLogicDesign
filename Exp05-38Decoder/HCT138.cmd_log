@@ -1,0 +1,7 @@
+sch2sym -intstyle ise -family kintex7 -refsym HCT138 D:/ISE/Exp05_38Decoder/Code/HCT138.sch D:/ISE/Exp05_38Decoder/HCT138.sym 
+xst -intstyle ise -ifn "D:/ISE/Exp05_38Decoder/HCT138.xst" -ofn "D:/ISE/Exp05_38Decoder/HCT138.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Code/HCT138.ucf -p xc7k160t-ffg676-2L HCT138.ngc HCT138.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o HCT138_map.ncd HCT138.ngd HCT138.pcf 
+par -w -intstyle ise -ol high -mt off HCT138_map.ncd HCT138.ncd HCT138.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml HCT138.twx HCT138.ncd -o HCT138.twr HCT138.pcf 
+bitgen -intstyle ise -f HCT138.ut HCT138.ncd 

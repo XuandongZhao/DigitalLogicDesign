@@ -1,0 +1,165 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MUX8T1_8.vf
+// /___/   /\     Timestamp : 11/14/2016 21:19:22
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog E:/code/Verilog/Mux881/MUX8T1_8.vf -w E:/code/Verilog/Mux881/MUX8T1_8.sch
+//Design Name: MUX8T1_8
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MUX8T1_8(MI0, 
+                  MI1, 
+                  MI2, 
+                  MI3, 
+                  MI4, 
+                  MI5, 
+                  MI6, 
+                  MI7, 
+                  S, 
+                  O);
+
+    input [7:0] MI0;
+    input [7:0] MI1;
+    input [7:0] MI2;
+    input [7:0] MI3;
+    input [7:0] MI4;
+    input [7:0] MI5;
+    input [7:0] MI6;
+    input [7:0] MI7;
+    input [2:0] S;
+   output [7:0] O;
+   
+   wire [3:0] MD;
+   wire [3:0] XLXN_55;
+   wire XLXN_62;
+   wire [3:0] XLXN_78;
+   wire [3:0] XLXN_84;
+   wire XLXN_89;
+   wire XLXN_91;
+   wire XLXN_92;
+   wire XLXN_93;
+   wire XLXN_94;
+   wire XLXN_95;
+   wire XLXN_96;
+   wire XLXN_97;
+   wire XLXN_98;
+   wire XLXN_99;
+   wire XLXN_101;
+   wire XLXN_102;
+   wire XLXN_103;
+   wire XLXN_106;
+   wire XLXN_107;
+   wire XLXN_108;
+   
+   MUX4T1_4  XLXI_1 (.I0(MI4[7:4]), 
+                      .I1(MI5[7:4]), 
+                      .I2(MI6[7:4]), 
+                      .I3(MI7[7:4]), 
+                      .s(S[1:0]), 
+                      .O(MD[3:0]));
+   MUX4T1_4  XLXI_2 (.I0(MI0[3:0]), 
+                      .I1(MI1[3:0]), 
+                      .I2(MI2[3:0]), 
+                      .I3(MI3[3:0]), 
+                      .s(S[1:0]), 
+                      .O(XLXN_78[3:0]));
+   MUX4T1_4  XLXI_3 (.I0(MI4[3:0]), 
+                      .I1(MI5[3:0]), 
+                      .I2(MI6[3:0]), 
+                      .I3(MI7[3:0]), 
+                      .s(S[1:0]), 
+                      .O(XLXN_84[3:0]));
+   MUX4T1_4  XLXI_4 (.I0(MI0[7:4]), 
+                      .I1(MI1[7:4]), 
+                      .I2(MI2[7:4]), 
+                      .I3(MI3[7:4]), 
+                      .s(S[1:0]), 
+                      .O(XLXN_55[3:0]));
+   INV  XLXI_5 (.I(S[2]), 
+               .O(XLXN_62));
+   AND2  XLXI_6 (.I0(XLXN_55[3]), 
+                .I1(XLXN_62), 
+                .O(XLXN_89));
+   AND2  XLXI_7 (.I0(XLXN_55[2]), 
+                .I1(XLXN_62), 
+                .O(XLXN_91));
+   AND2  XLXI_8 (.I0(XLXN_55[1]), 
+                .I1(XLXN_62), 
+                .O(XLXN_92));
+   AND2  XLXI_9 (.I0(XLXN_55[0]), 
+                .I1(XLXN_62), 
+                .O(XLXN_93));
+   AND2  XLXI_11 (.I0(MD[2]), 
+                 .I1(S[2]), 
+                 .O(XLXN_95));
+   AND2  XLXI_12 (.I0(MD[1]), 
+                 .I1(S[2]), 
+                 .O(XLXN_96));
+   AND2  XLXI_13 (.I0(MD[0]), 
+                 .I1(S[2]), 
+                 .O(XLXN_97));
+   AND2  XLXI_14 (.I0(XLXN_78[3]), 
+                 .I1(XLXN_62), 
+                 .O(XLXN_98));
+   AND2  XLXI_15 (.I0(XLXN_78[2]), 
+                 .I1(XLXN_62), 
+                 .O(XLXN_99));
+   AND2  XLXI_16 (.I0(XLXN_78[1]), 
+                 .I1(XLXN_62), 
+                 .O(XLXN_101));
+   AND2  XLXI_17 (.I0(XLXN_78[0]), 
+                 .I1(XLXN_62), 
+                 .O(XLXN_102));
+   AND2  XLXI_18 (.I0(XLXN_84[3]), 
+                 .I1(S[2]), 
+                 .O(XLXN_103));
+   AND2  XLXI_19 (.I0(XLXN_84[2]), 
+                 .I1(S[2]), 
+                 .O(XLXN_106));
+   AND2  XLXI_20 (.I0(XLXN_84[1]), 
+                 .I1(S[2]), 
+                 .O(XLXN_107));
+   AND2  XLXI_21 (.I0(XLXN_84[0]), 
+                 .I1(S[2]), 
+                 .O(XLXN_108));
+   OR2  XLXI_22 (.I0(XLXN_94), 
+                .I1(XLXN_89), 
+                .O(O[7]));
+   OR2  XLXI_23 (.I0(XLXN_95), 
+                .I1(XLXN_91), 
+                .O(O[6]));
+   OR2  XLXI_24 (.I0(XLXN_96), 
+                .I1(XLXN_92), 
+                .O(O[5]));
+   OR2  XLXI_25 (.I0(XLXN_97), 
+                .I1(XLXN_93), 
+                .O(O[4]));
+   OR2  XLXI_26 (.I0(XLXN_103), 
+                .I1(XLXN_98), 
+                .O(O[3]));
+   OR2  XLXI_27 (.I0(XLXN_106), 
+                .I1(XLXN_99), 
+                .O(O[2]));
+   OR2  XLXI_28 (.I0(XLXN_107), 
+                .I1(XLXN_101), 
+                .O(O[1]));
+   OR2  XLXI_29 (.I0(XLXN_108), 
+                .I1(XLXN_102), 
+                .O(O[0]));
+   AND2  XLXI_30 (.I0(MD[3]), 
+                 .I1(S[2]), 
+                 .O(XLXN_94));
+endmodule

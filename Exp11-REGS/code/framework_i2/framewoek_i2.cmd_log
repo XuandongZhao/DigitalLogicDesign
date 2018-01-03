@@ -1,0 +1,25 @@
+sch2hdl -intstyle ise -family kintex7 -verilog framewoek_i2_drc.vf -w C:/.Xilinx/framework_i2/framewoek_i2.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog framewoek_i2_drc.vf -w C:/.Xilinx/framework_i2/framewoek_i2.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog framewoek_i2_drc.vf -w C:/.Xilinx/framework_i2/framewoek_i2.sch 
+xst -intstyle ise -ifn "C:/.Xilinx/framework_i2/framewoek_i2.xst" -ofn "C:/.Xilinx/framework_i2/framewoek_i2.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/framework_i2/framewoek_i2.xst" -ofn "C:/.Xilinx/framework_i2/framewoek_i2.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/framework_i2/framewoek_i2.xst" -ofn "C:/.Xilinx/framework_i2/framewoek_i2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/.Xilinx/Framework/Framework_ucf.ucf -p xc7k160t-ffg676-2L framewoek_i2.ngc framewoek_i2.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framewoek_i2_map.ncd framewoek_i2.ngd framewoek_i2.pcf 
+par -w -intstyle ise -ol high -mt off framewoek_i2_map.ncd framewoek_i2.ncd framewoek_i2.pcf 
+xst -intstyle ise -ifn "C:/.Xilinx/framework_i2/framewoek_i2.xst" -ofn "C:/.Xilinx/framework_i2/framewoek_i2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/.Xilinx/Framework/Framework_ucf.ucf -p xc7k160t-ffg676-2L framewoek_i2.ngc framewoek_i2.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framewoek_i2_map.ncd framewoek_i2.ngd framewoek_i2.pcf 
+xst -intstyle ise -ifn "C:/.Xilinx/framework_i2/framewoek_i2.xst" -ofn "C:/.Xilinx/framework_i2/framewoek_i2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/.Xilinx/Framework/Framework_ucf.ucf -p xc7k160t-ffg676-2L framewoek_i2.ngc framewoek_i2.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framewoek_i2_map.ncd framewoek_i2.ngd framewoek_i2.pcf 
+par -w -intstyle ise -ol high -mt off framewoek_i2_map.ncd framewoek_i2.ncd framewoek_i2.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framewoek_i2.twx framewoek_i2.ncd -o framewoek_i2.twr framewoek_i2.pcf 
+bitgen -intstyle ise -f framewoek_i2.ut framewoek_i2.ncd 
+xst -intstyle ise -ifn "C:/.Xilinx/framework_i2/framewoek_i2.xst" -ofn "C:/.Xilinx/framework_i2/framewoek_i2.syr" 
+xst -intstyle ise -ifn "C:/.Xilinx/framework_i2/framewoek_i2.xst" -ofn "C:/.Xilinx/framework_i2/framewoek_i2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/.Xilinx/Framework/Framework_ucf.ucf -p xc7k160t-ffg676-2L framewoek_i2.ngc framewoek_i2.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o framewoek_i2_map.ncd framewoek_i2.ngd framewoek_i2.pcf 
+par -w -intstyle ise -ol high -mt off framewoek_i2_map.ncd framewoek_i2.ncd framewoek_i2.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml framewoek_i2.twx framewoek_i2.ncd -o framewoek_i2.twr framewoek_i2.pcf 
+bitgen -intstyle ise -f framewoek_i2.ut framewoek_i2.ncd 

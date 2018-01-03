@@ -1,0 +1,1561 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'MUX8T1_32'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off
+-power off -o MUX8T1_32_map.ncd MUX8T1_32.ngd MUX8T1_32.pcf 
+Target Device  : xc7k160t
+Target Package : ffg676
+Target Speed   : -2l
+Mapper Version : kintex7 -- $Revision: 1.55 $
+Mapped Date    : Wed Dec 14 20:14:38 2016
+
+WARNING:LIT:701 - PAD symbol "I0<31>" has an undefined IOSTANDARD.
+WARNING:LIT:702 - PAD symbol "I0<31>" is not constrained (LOC) to a specific
+   location.
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal I0<24> connected to top level port I0<24> has been
+   removed.
+WARNING:MapLib:701 - Signal I0<16> connected to top level port I0<16> has been
+   removed.
+WARNING:MapLib:701 - Signal I0<8> connected to top level port I0<8> has been
+   removed.
+WARNING:MapLib:701 - Signal I0<0> connected to top level port I0<0> has been
+   removed.
+WARNING:MapLib:701 - Signal I1<24> connected to top level port I1<24> has been
+   removed.
+WARNING:MapLib:701 - Signal I1<16> connected to top level port I1<16> has been
+   removed.
+WARNING:MapLib:701 - Signal I1<8> connected to top level port I1<8> has been
+   removed.
+WARNING:MapLib:701 - Signal I1<0> connected to top level port I1<0> has been
+   removed.
+WARNING:MapLib:701 - Signal I2<24> connected to top level port I2<24> has been
+   removed.
+WARNING:MapLib:701 - Signal I2<16> connected to top level port I2<16> has been
+   removed.
+WARNING:MapLib:701 - Signal I2<8> connected to top level port I2<8> has been
+   removed.
+WARNING:MapLib:701 - Signal I2<0> connected to top level port I2<0> has been
+   removed.
+WARNING:MapLib:701 - Signal I3<24> connected to top level port I3<24> has been
+   removed.
+WARNING:MapLib:701 - Signal I3<16> connected to top level port I3<16> has been
+   removed.
+WARNING:MapLib:701 - Signal I3<8> connected to top level port I3<8> has been
+   removed.
+WARNING:MapLib:701 - Signal I3<0> connected to top level port I3<0> has been
+   removed.
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 30 secs 
+Total CPU  time at the beginning of Placer: 29 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:53634) REAL time: 33 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:53634) REAL time: 33 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:53634) REAL time: 33 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+...
+.....
+Phase 4.2  Initial Placement for Architecture Specific Features (Checksum:53634)
+ REAL time: 46 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:53634) REAL time: 46 secs 
+
+Phase 6.3  Local Placement Optimization
+...
+....
+Phase 6.3  Local Placement Optimization (Checksum:579c2b24) REAL time: 50 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:579c2b24) REAL time: 50 secs 
+
+Phase 8.8  Global Placement
+......
+................
+................
+Phase 8.8  Global Placement (Checksum:269f9e1c) REAL time: 51 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:269f9e1c) REAL time: 51 secs 
+
+Phase 10.18  Placement Optimization
+Phase 10.18  Placement Optimization (Checksum:2e5078f2) REAL time: 53 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:2e5078f2) REAL time: 53 secs 
+
+Phase 12.34  Placement Validation
+Phase 12.34  Placement Validation (Checksum:2e5078f2) REAL time: 53 secs 
+
+Total REAL time to Placer completion: 54 secs 
+Total CPU  time to Placer completion: 52 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:2452 - The IOB I1<10> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<11> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<12> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<0> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<13> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<1> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<14> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<2> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<15> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<3> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<4> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<17> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<5> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<18> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<6> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<19> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<7> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<8> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<9> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<20> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<21> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<22> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<23> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<25> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<26> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<27> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<28> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<29> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<31> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<10> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<11> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<12> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<13> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<14> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<15> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<17> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<18> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<19> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<1> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<2> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<3> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<4> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<5> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<20> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<6> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<21> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<7> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<22> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<23> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<9> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<25> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<26> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<27> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<28> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<29> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<31> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<0> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<1> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<2> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<3> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<4> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<5> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<6> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<7> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<8> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<9> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<10> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<11> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<12> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<13> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<14> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<15> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<16> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<17> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<18> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<19> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<20> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<21> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<22> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<23> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<24> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<25> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<26> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<27> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<28> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<29> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<31> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<10> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<11> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<12> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<1> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<13> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<2> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<14> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<3> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<15> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<4> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<16> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<5> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<17> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<6> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<18> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<7> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<19> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<9> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<20> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<21> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<22> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<23> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<24> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<25> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<26> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<27> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<28> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<29> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<0> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<1> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<2> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I7<31> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<3> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<4> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<5> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<6> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<7> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<8> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I5<9> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<10> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<11> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<12> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<13> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<14> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<15> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<17> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<18> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<19> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<20> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<21> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<22> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<23> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<25> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<26> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<27> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<28> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<29> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I0<31> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<1> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<2> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<3> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<4> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<5> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<6> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<7> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I3<9> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<10> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<11> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<12> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<13> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<14> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<15> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<17> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<18> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<19> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<20> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<21> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<22> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<23> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<25> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<26> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<27> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<28> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<29> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I2<31> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB s<0> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB s<1> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB s<2> is either not constrained (LOC) to a
+   specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<10> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<11> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<12> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<13> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<14> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<15> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<16> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<17> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<18> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<19> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<20> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<21> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<22> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<23> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<24> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<25> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<26> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<27> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<28> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<29> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<31> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<1> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<2> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<3> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<4> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<5> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<6> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<7> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I1<9> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<10> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<11> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<12> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<13> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<14> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<0> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<15> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<1> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<16> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<2> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<17> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<3> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<18> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<4> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<19> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<5> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<6> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<7> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<8> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<9> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<20> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<21> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<22> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<23> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<24> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<25> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<26> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<27> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<28> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<29> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<10> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<11> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<12> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<13> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<14> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<15> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I6<31> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<16> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<17> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<18> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<19> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<20> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<21> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<22> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<23> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<24> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<25> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<26> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<27> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<28> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<29> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<30> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB o<31> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<0> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<1> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<2> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<3> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<4> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<5> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<6> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<7> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<8> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB I4<9> is either not constrained (LOC) to
+   a specific location and/or has an undefined I/O Standard (IOSTANDARD). This
+   condition may seriously affect the device and will be an error in bitstream
+   creation. It should be corrected by properly specifying the pin location and
+   I/O Standard.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  293
+Slice Logic Utilization:
+  Number of Slice Registers:                     0 out of 202,800    0%
+  Number of Slice LUTs:                        276 out of 101,400    1%
+    Number used as logic:                      276 out of 101,400    1%
+      Number using O6 output only:             276
+      Number using O5 output only:               0
+      Number using O5 and O6:                    0
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of  35,000    0%
+    Number used exclusively as route-thrus:      0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   161 out of  25,350    1%
+  Number of LUT Flip Flop pairs used:          276
+    Number with an unused Flip Flop:           276 out of     276  100%
+    Number with an unused LUT:                   0 out of     276    0%
+    Number of fully used LUT-FF pairs:           0 out of     276    0%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 202,800    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       275 out of     400   68%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     325    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     650    0%
+  Number of BUFG/BUFGCTRLs:                      0 out of      32    0%
+  Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     400    0%
+  Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     400    0%
+  Number of ODELAYE2/ODELAYE2_FINEDELAYs:        0 out of     150    0%
+  Number of OLOGICE2/OLOGICE3/OSERDESE2s:        0 out of     400    0%
+  Number of PHASER_IN/PHASER_IN_PHYs:            0 out of      32    0%
+  Number of PHASER_OUT/PHASER_OUT_PHYs:          0 out of      32    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of     120    0%
+  Number of BUFRs:                               0 out of      32    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DNA_PORTs:                           0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     600    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE2_CHANNELs:                      0 out of       8    0%
+  Number of GTXE2_COMMONs:                       0 out of       2    0%
+  Number of IBUFDS_GTE2s:                        0 out of       4    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       8    0%
+  Number of IN_FIFOs:                            0 out of      32    0%
+  Number of MMCME2_ADVs:                         0 out of       8    0%
+  Number of OUT_FIFOs:                           0 out of      32    0%
+  Number of PCIE_2_1s:                           0 out of       1    0%
+  Number of PHASER_REFs:                         0 out of       8    0%
+  Number of PHY_CONTROLs:                        0 out of       8    0%
+  Number of PLLE2_ADVs:                          0 out of       8    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of XADCs:                               0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                1.65
+
+Peak Memory Usage:  1016 MB
+Total REAL time to MAP completion:  1 mins 1 secs 
+Total CPU time to MAP completion:   59 secs 
+
+Mapping completed.
+See MAP report file "MUX8T1_32_map.mrp" for details.

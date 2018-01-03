@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/ISE/Exp09-Locker/RS_NAND.xst" -ofn "D:/ISE/Exp09-Locker/RS_NAND.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym RS_NAND D:/ISE/Exp09-Locker/Code/RS_NAND.sch D:/ISE/Exp09-Locker/RS_NAND.sym 

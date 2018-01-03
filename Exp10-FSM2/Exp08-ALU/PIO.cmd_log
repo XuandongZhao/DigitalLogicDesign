@@ -1,0 +1,2 @@
+vhdtdtfi -lib work F:/MyDocuments/framework/PIO.v -lang verilog -prj framework -o PIO.spl -module PIO -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 PIO.spl F:/MyDocuments/framework/PIO.sym 

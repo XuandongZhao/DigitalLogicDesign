@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\MyDocuments\framework\Framework.ncd
+OUTFILE=F:\MyDocuments\framework\Framework.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=F:\MyDocuments\framework
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/ISE/Exp10-FSM/counter_32_rev_test_isim_beh.exe" -prj "D:/ISE/Exp10-FSM/counter_32_rev_test_beh.prj" "work.counter_32_rev_test" "work.glbl" 

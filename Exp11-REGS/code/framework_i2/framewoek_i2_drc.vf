@@ -1,0 +1,152 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : framewoek_i2_drc.vf
+// /___/   /\     Timestamp : 12/02/2016 16:36:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog framewoek_i2_drc.vf -w C:/.Xilinx/framework_i2/framewoek_i2.sch
+//Design Name: framewoek_i2
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module framewoek_i2(clk_100mhz, 
+                    K_COL, 
+                    RSTN, 
+                    SW, 
+                    Buzzer, 
+                    CR, 
+                    Div, 
+                    K_ROW, 
+                    LEDCLK, 
+                    LEDCLR, 
+                    LEDDT, 
+                    LEDEN, 
+                    RDY, 
+                    readn, 
+                    SEGCLK, 
+                    SEGCLR, 
+                    SEGDT, 
+                    SEGEN);
+
+    input clk_100mhz;
+    input [3:0] K_COL;
+    input RSTN;
+    input [15:0] SW;
+   output Buzzer;
+   output CR;
+   output [31:0] Div;
+   output [4:0] K_ROW;
+   output LEDCLK;
+   output LEDCLR;
+   output LEDDT;
+   output LEDEN;
+   output RDY;
+   output readn;
+   output SEGCLK;
+   output SEGCLR;
+   output SEGDT;
+   output SEGEN;
+   
+   wire [7:0] blink;
+   wire [3:0] BTN_OK;
+   wire N0;
+   wire [3:0] Pulse;
+   wire rst;
+   wire [15:0] SW_OK;
+   wire V5;
+   wire [4:0] XLXN_10;
+   wire [31:0] XLXN_26;
+   wire [31:0] XLXN_27;
+   wire [7:0] XLXN_28;
+   wire [7:0] XLXN_29;
+   wire [31:0] XLXN_30;
+   wire RDY_DUMMY;
+   wire [31:0] Div_DUMMY;
+   wire readn_DUMMY;
+   
+   assign Div[31:0] = Div_DUMMY[31:0];
+   assign RDY = RDY_DUMMY;
+   assign readn = readn_DUMMY;
+   SAnti_jitter  XLXI_1 (.clk(clk_100mhz), 
+                        .Key_y(K_COL[3:0]), 
+                        .readn(readn_DUMMY), 
+                        .RSTN(RSTN), 
+                        .SW(SW[15:0]), 
+                        .BTN_OK(BTN_OK[3:0]), 
+                        .CR(CR), 
+                        .Key_out(XLXN_10[4:0]), 
+                        .Key_ready(RDY_DUMMY), 
+                        .Key_x(K_ROW[4:0]), 
+                        .pulse_out(Pulse[3:0]), 
+                        .rst(rst), 
+                        .SW_OK(SW_OK[15:0]));
+   SEnter_2_32  XLXI_2 (.BTN(BTN_OK[2:0]), 
+                       .clk(clk_100mhz), 
+                       .Ctrl({SW_OK[7:5], SW_OK[15], SW_OK[0]}), 
+                       .Din(XLXN_10[4:0]), 
+                       .D_ready(RDY_DUMMY), 
+                       .Ai(XLXN_26[31:0]), 
+                       .Bi(XLXN_27[31:0]), 
+                       .blink(blink[7:0]), 
+                       .readn(readn_DUMMY));
+   clkdiv  XLXI_3 (.clk(clk_100mhz), 
+                  .rst(rst), 
+                  .clkdiv(Div_DUMMY[31:0]));
+   Display  XLXI_4 (.clk(clk_100mhz), 
+                   .flash(Div_DUMMY[25]), 
+                   .Hexs(XLXN_30[31:0]), 
+                   .LES(XLXN_28[7:0]), 
+                   .point(XLXN_29[7:0]), 
+                   .rst(rst), 
+                   .Start(Div_DUMMY[20]), 
+                   .SW0(SW_OK[0]), 
+                   .seg_clk(SEGCLK), 
+                   .seg_clrn(SEGCLR), 
+                   .SEG_PEN(SEGEN), 
+                   .seg_sout(SEGDT));
+   Multi_8CH32  XLXI_5 (.clk(clk_100mhz), 
+                       .Data0(XLXN_26[31:0]), 
+                       .data1(XLXN_27[31:0]), 
+                       .data2(), 
+                       .data3(), 
+                       .data4(), 
+                       .data5(), 
+                       .data6(), 
+                       .data7(), 
+                       .EN(V5), 
+                       .LES({N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         blink[3:0], N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, N0, 
+         N0, blink[7:0], blink[7:0]}), 
+                       .point_in({Div_DUMMY[31:0], Div_DUMMY[31:0]}), 
+                       .rst(rst), 
+                       .Test(SW_OK[7:5]), 
+                       .Disp_num(XLXN_30[31:0]), 
+                       .LE_out(XLXN_28[7:0]), 
+                       .point_out(XLXN_29[7:0]));
+   GPIO  XLXI_6 (.clk(clk_100mhz), 
+                .EN(V5), 
+                .P_Data({SW[15:0], SW_OK[15:0]}), 
+                .rst(rst), 
+                .Start(Div_DUMMY[20]), 
+                .GPIOf0(), 
+                .led_clk(LEDCLK), 
+                .led_clrn(LEDCLR), 
+                .LED_PEN(LEDEN), 
+                .led_sout(LEDDT));
+   VCC  XLXI_7 (.P(V5));
+   GND  XLXI_8 (.G(N0));
+   BUF  XLXI_9 (.I(V5), 
+               .O(Buzzer));
+endmodule

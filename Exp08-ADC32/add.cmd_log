@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/ISE/Exp08-ADC32/add.xst" -ofn "D:/ISE/Exp08-ADC32/add.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym add D:/ISE/Exp08-ADC32/Code/add.sch D:/ISE/Exp08-ADC32/add.sym 

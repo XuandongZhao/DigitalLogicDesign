@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -w -refsym decpder38_sch D:/ISE/FSM/code/decpder38_sch.sch D:/ISE/FSM/decpder38_sch.sym 

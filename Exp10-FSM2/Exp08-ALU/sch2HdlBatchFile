@@ -1,0 +1,8 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp08-ALU/Display.vf,-w,D:/ISE/Exp08-ALU/Display.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp08-ALU/exp82.vf,-w,D:/ISE/Exp08-ALU/exp82.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp08-ALU/MUX2T1_64.vf,-w,D:/ISE/Exp08-ALU/MUX2T1_64.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp08-ALU/MUX2T1_8.vf,-w,D:/ISE/Exp08-ALU/MUX2T1_8.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp08-ALU/Display.vf,-w,D:/ISE/Exp08-ALU/Display.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp08-ALU/exp82.vf,-w,D:/ISE/Exp08-ALU/exp82.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp08-ALU/Framework.vf,-w,D:/ISE/Exp08-ALU/Framework.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp08-ALU/MUX2T1_64.vf,-w,D:/ISE/Exp08-ALU/MUX2T1_64.sch

@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/ISE/Exp04_Lamp/Lamp.xst" -ofn "D:/ISE/Exp04_Lamp/Lamp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-2L Lamp.ngc Lamp.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Lamp_map.ncd Lamp.ngd Lamp.pcf 
+par -w -intstyle ise -ol high -mt off Lamp_map.ncd Lamp.ncd Lamp.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Lamp.twx Lamp.ncd -o Lamp.twr Lamp.pcf 
+bitgen -intstyle ise -f Lamp.ut Lamp.ncd 
+xst -intstyle ise -ifn "D:/ISE/Exp04_Lamp/Lamp.xst" -ofn "D:/ISE/Exp04_Lamp/Lamp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Code/Lamp_UCF.ucf -p xc7k160t-ffg676-1 Lamp.ngc Lamp.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Lamp_map.ncd Lamp.ngd Lamp.pcf 
+par -w -intstyle ise -ol high -mt off Lamp_map.ncd Lamp.ncd Lamp.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Lamp.twx Lamp.ncd -o Lamp.twr Lamp.pcf 
+bitgen -intstyle ise -f Lamp.ut Lamp.ncd 

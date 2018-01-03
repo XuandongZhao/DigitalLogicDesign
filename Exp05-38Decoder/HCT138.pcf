@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Dec 14 16:32:46 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "G_2A" LOCATE = SITE "AD11" LEVEL 1;
+COMP "G_2B" LOCATE = SITE "AD10" LEVEL 1;
+COMP "Buzzer" LOCATE = SITE "AF24" LEVEL 1;
+COMP "Y0" LOCATE = SITE "AB26" LEVEL 1;
+COMP "Y1" LOCATE = SITE "W24" LEVEL 1;
+COMP "Y2" LOCATE = SITE "W23" LEVEL 1;
+COMP "Y3" LOCATE = SITE "AB25" LEVEL 1;
+COMP "Y4" LOCATE = SITE "AA25" LEVEL 1;
+COMP "Y5" LOCATE = SITE "W21" LEVEL 1;
+COMP "Y6" LOCATE = SITE "V21" LEVEL 1;
+COMP "Y7" LOCATE = SITE "W26" LEVEL 1;
+COMP "A" LOCATE = SITE "AA10" LEVEL 1;
+COMP "B" LOCATE = SITE "AB10" LEVEL 1;
+COMP "C" LOCATE = SITE "AA13" LEVEL 1;
+COMP "G" LOCATE = SITE "Y12" LEVEL 1;
+SCHEMATIC END;
+

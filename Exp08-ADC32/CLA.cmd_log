@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym CLA D:/ISE/Exp08-ADC32/Code/CLA.sch D:/ISE/Exp08-ADC32/CLA.sym 

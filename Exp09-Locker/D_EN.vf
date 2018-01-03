@@ -1,0 +1,42 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : D_EN.vf
+// /___/   /\     Timestamp : 11/30/2016 13:55:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/ISE/Exp09-Locker/D_EN.vf -w D:/ISE/Exp09-Locker/Code/D_EN.sch
+//Design Name: D_EN
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D_EN(C, 
+            D, 
+            Q, 
+            Qn);
+
+    input C;
+    input D;
+   output Q;
+   output Qn;
+   
+   wire XLXN_5;
+   
+   RS_EN  RS2 (.C(C), 
+              .R(XLXN_5), 
+              .S(D), 
+              .Q(Q), 
+              .Qn(Qn));
+   INV  XLXI_2 (.I(D), 
+               .O(XLXN_5));
+endmodule

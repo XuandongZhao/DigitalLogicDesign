@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : RS_EN.vf
+// /___/   /\     Timestamp : 11/30/2016 13:55:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/ISE/Exp09-Locker/RS_EN.vf -w D:/ISE/Exp09-Locker/RS_EN.sch
+//Design Name: RS_EN
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module RS_EN(C, 
+             R, 
+             S, 
+             Q, 
+             Qn);
+
+    input C;
+    input R;
+    input S;
+   output Q;
+   output Qn;
+   
+   wire XLXN_5;
+   wire XLXN_6;
+   
+   RS_NAND  RS1 (.Rn(XLXN_6), 
+                .Sn(XLXN_5), 
+                .Q(Q), 
+                .Qn(Qn));
+   NAND2  XLXI_3 (.I0(C), 
+                 .I1(S), 
+                 .O(XLXN_5));
+   NAND2  XLXI_4 (.I0(R), 
+                 .I1(C), 
+                 .O(XLXN_6));
+endmodule

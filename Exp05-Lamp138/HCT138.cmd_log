@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family kintex7 -refsym HCT138 D:/ISE/Exp05_Lamp138/Code/HCT138.sch D:/ISE/Exp05_Lamp138/HCT138.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym HCT138 D:/ISE/Exp05_Lamp138/Code/HCT138.sch D:/ISE/Exp05_Lamp138/HCT138.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym HCT138 D:/ISE/Exp05_Lamp138/Code/HCT138.sch D:/ISE/Exp05_Lamp138/HCT138.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym HCT138 D:/ISE/Exp05_Lamp138/Code/HCT138.sch D:/ISE/Exp05_Lamp138/HCT138.sym 

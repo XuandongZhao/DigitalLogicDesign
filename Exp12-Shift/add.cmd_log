@@ -1,0 +1,3 @@
+vhdtdtfi -lang verilog -prj Top -o D:/zxd_CS/LCDF/Exp12-Shift/add.tfi -lib work D:/zxd_CS/LCDF/Exp12-Shift/Code//add.v -module add -template D:/Software/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work D:/zxd_CS/LCDF/Exp12-Shift/Code/add.v -lang verilog -prj Top -o add.spl -module add -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 add.spl D:/zxd_CS/LCDF/Exp12-Shift/add.sym 

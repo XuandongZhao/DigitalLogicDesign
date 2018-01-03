@@ -1,0 +1,28 @@
+Command line:
+   D_Trig_D_Trig_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55532
+
+Wed Dec 14 13:58:44 2016
+
+
+ Elaboration Time: 0.3125 sec
+
+ Current Memory Usage: 866.886 Meg
+
+ Total Signals          : 81
+ Total Nets             : 29
+ Total Signal Drivers   : 21
+ Total Blocks           : 18
+ Total Primitive Blocks : 11
+ Total Processes        : 24
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 143
+
+ Total Simulation Time: 0.5625 sec
+
+ Current Memory Usage: 709.599 Meg
+
+Wed Dec 14 14:02:15 2016
+

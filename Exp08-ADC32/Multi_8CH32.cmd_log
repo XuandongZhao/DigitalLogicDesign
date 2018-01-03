@@ -1,0 +1,12 @@
+vhdtdtfi -lib work D:/ISE/Exp08-ADC32/Code/Multi_8CH32.v -lang verilog -prj Exp08-ADC32 -o Multi_8CH32.spl -module Multi_8CH32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Multi_8CH32.spl D:/ISE/Exp08-ADC32/Multi_8CH32.sym 
+vhdtdtfi -lib work D:/ISE/Exp08-ADC32/Code/Multi_8CH32.v -lang verilog -prj Exp08-ADC32 -o Multi_8CH32.spl -module Multi_8CH32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Multi_8CH32.spl D:/ISE/Exp08-ADC32/Multi_8CH32.sym 
+vhdtdtfi -lib work D:/ISE/Exp08-ADC32/Code/Multi_8CH32.v -lang verilog -prj Exp08-ADC32 -o Multi_8CH32.spl -module Multi_8CH32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Multi_8CH32.spl D:/ISE/Exp08-ADC32/Multi_8CH32.sym 
+vhdtdtfi -lib work D:/ISE/Exp08-ADC32/Code/Multi_8CH32.v -lang verilog -prj Exp08-ADC32 -o Multi_8CH32.spl -module Multi_8CH32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Multi_8CH32.spl D:/ISE/Exp08-ADC32/Multi_8CH32.sym 
+vhdtdtfi -lib work D:/ISE/Exp08-ADC32/Code/Multi_8CH32.v -lang verilog -prj Exp08-ADC32 -o Multi_8CH32.spl -module Multi_8CH32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Multi_8CH32.spl D:/ISE/Exp08-ADC32/Multi_8CH32.sym 
+vhdtdtfi -lib work D:/ISE/Exp08-ADC32/Code/Multi_8CH32.v -lang verilog -prj Exp08-ADC32 -o Multi_8CH32.spl -module Multi_8CH32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Multi_8CH32.spl D:/ISE/Exp08-ADC32/Multi_8CH32.sym 

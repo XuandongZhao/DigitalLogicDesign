@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -w -refsym HTC138 D:/ISE/FSM/code/HTC138.sch D:/ISE/FSM/HTC138.sym 

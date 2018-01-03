@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog MUX8T1_drc.vf -w D:/ISE/Exp07-MUX/Code/MUX8T1.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX8T1 D:/ISE/Exp07-MUX/Code/MUX8T1.sch D:/ISE/Exp07-MUX/MUX8T1.sym 

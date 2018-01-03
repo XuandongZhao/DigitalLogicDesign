@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Display_drc.vf -w F:/MyDocuments/framework/Display.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Display F:/MyDocuments/framework/Display.sch F:/MyDocuments/framework/Display.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Display.vf -w F:/MyDocuments/framework/Display.sch 

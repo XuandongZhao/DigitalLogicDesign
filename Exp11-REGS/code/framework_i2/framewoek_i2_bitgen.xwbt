@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\.Xilinx\framework_i2\framewoek_i2.ncd
+OUTFILE=C:\.Xilinx\framework_i2\framewoek_i2.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=C:\.Xilinx\framework_i2
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

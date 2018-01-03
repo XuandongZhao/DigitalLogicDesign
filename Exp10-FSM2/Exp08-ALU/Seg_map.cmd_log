@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Seg_map_drc.vf -w F:/MyDocuments/framework/Seg_map.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Seg_map F:/MyDocuments/framework/Seg_map.sch F:/MyDocuments/framework/Seg_map.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg_map_drc.vf -w F:/MyDocuments/framework/Seg_map.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Seg_map F:/MyDocuments/framework/Seg_map.sch F:/MyDocuments/framework/Seg_map.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Seg_map F:/MyDocuments/framework/Seg_map.sch F:/MyDocuments/framework/Seg_map.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg_map_drc.vf -w F:/MyDocuments/framework/Seg_map.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Seg_map F:/MyDocuments/framework/Seg_map.sch F:/MyDocuments/framework/Seg_map.sym 

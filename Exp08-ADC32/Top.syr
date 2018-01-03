@@ -1,0 +1,906 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\MUX2T1_8.vf" into library work
+Parsing module <MUX2T1_8>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\MC14495_ZJU.vf" into library work
+Parsing module <MC14495_ZJU>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\CLA.vf" into library work
+Parsing module <CLA>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\add.vf" into library work
+Parsing module <add>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Code\SSeg_map.v" into library work
+Parsing module <SSeg_map>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Code\P2S.v" into library work
+Parsing module <P2S>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\MUX2T1_64.vf" into library work
+Parsing module <MUX2T1_8_MUSER_MUX2T1_64>.
+Parsing module <MUX2T1_64>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Code\LED_P2S.v" into library work
+Parsing module <LED_P2S>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Code\HexTo8SEG.v" into library work
+Parsing module <HexTo8SEG>.
+Parsing module <Hex2Seg>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\add4b.vf" into library work
+Parsing module <CLA_MUSER_add4b>.
+Parsing module <add_MUSER_add4b>.
+Parsing module <add4b>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Code\SEnter_2_32.v" into library work
+Parsing module <SEnter_2_32>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Code\SAnti_jitter.v" into library work
+Parsing module <SAnti_jitter>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Code\Multi_8CH32.v" into library work
+Parsing module <Multi_8CH32>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Code\GPIO.v" into library work
+Parsing module <GPIO>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Display.vf" into library work
+Parsing module <MUX2T1_8_MUSER_Display>.
+Parsing module <MUX2T1_64_MUSER_Display>.
+Parsing module <Display>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Code\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\ADC32.vf" into library work
+Parsing module <CLA_MUSER_ADC32>.
+Parsing module <add_MUSER_ADC32>.
+Parsing module <add4b_MUSER_ADC32>.
+Parsing module <ADC32>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\Top.vf" into library work
+Parsing module <MUX2T1_8_MUSER_Top>.
+Parsing module <MUX2T1_64_MUSER_Top>.
+Parsing module <Display_MUSER_Top>.
+Parsing module <CLA_MUSER_Top>.
+Parsing module <add_MUSER_Top>.
+Parsing module <add4b_MUSER_Top>.
+Parsing module <ADC32_MUSER_Top>.
+Parsing module <Top>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\MUX441.vf" into library work
+Parsing module <MUX441>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\MUX8T1_32.vf" into library work
+Parsing module <MUX8T1_32>.
+Analyzing Verilog file "D:\ISE\Exp08-ADC32\MUX8T1_8.vf" into library work
+Parsing module <MUX441_MUSER_MUX8T1_8>.
+Parsing module <MUX8T1_8>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Top>.
+
+Elaborating module <SAnti_jitter>.
+WARNING:HDLCompiler:1499 - "D:\ISE\Exp08-ADC32\Code\SAnti_jitter.v" Line 21: Empty module <SAnti_jitter> remains a black box.
+WARNING:HDLCompiler:1127 - "D:\ISE\Exp08-ADC32\Top.vf" Line 636: Assignment to Pulse ignored, since the identifier is never used
+
+Elaborating module <SEnter_2_32>.
+WARNING:HDLCompiler:1499 - "D:\ISE\Exp08-ADC32\Code\SEnter_2_32.v" Line 21: Empty module <SEnter_2_32> remains a black box.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <Multi_8CH32>.
+WARNING:HDLCompiler:1499 - "D:\ISE\Exp08-ADC32\Code\Multi_8CH32.v" Line 21: Empty module <Multi_8CH32> remains a black box.
+
+Elaborating module <GPIO>.
+
+Elaborating module <LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)>.
+WARNING:HDLCompiler:1499 - "D:\ISE\Exp08-ADC32\Code\LED_P2S.v" Line 21: Empty module <LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)> remains a black box.
+
+Elaborating module <ADC32_MUSER_Top>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR2>.
+
+Elaborating module <add4b_MUSER_Top>.
+
+Elaborating module <add_MUSER_Top>.
+
+Elaborating module <XOR2>.
+
+Elaborating module <CLA_MUSER_Top>.
+
+Elaborating module <AND3>.
+
+Elaborating module <OR3>.
+
+Elaborating module <AND4>.
+
+Elaborating module <OR4>.
+
+Elaborating module <VCC>.
+
+Elaborating module <GND>.
+
+Elaborating module <BUF>.
+
+Elaborating module <Display_MUSER_Top>.
+
+Elaborating module <P2S>.
+WARNING:HDLCompiler:1499 - "D:\ISE\Exp08-ADC32\Code\P2S.v" Line 21: Empty module <P2S> remains a black box.
+
+Elaborating module <HexTo8SEG>.
+
+Elaborating module <Hex2Seg>.
+
+Elaborating module <MC14495_ZJU>.
+
+Elaborating module <INV>.
+WARNING:HDLCompiler:189 - "D:\ISE\Exp08-ADC32\Code\HexTo8SEG.v" Line 29: Size mismatch in connection of port <Hex>. Formal port size is 4-bit while actual signal size is 5-bit.
+
+Elaborating module <SSeg_map>.
+
+Elaborating module <MUX2T1_64_MUSER_Top>.
+
+Elaborating module <MUX2T1_8_MUSER_Top>.
+WARNING:HDLCompiler:552 - "D:\ISE\Exp08-ADC32\Top.vf" Line 217: Input port Disp_num[63] is not connected on this instance
+WARNING:HDLCompiler:552 - "D:\ISE\Exp08-ADC32\Top.vf" Line 681: Input port C0 is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top>.
+    Related source file is "D:\ISE\Exp08-ADC32\Top.vf".
+INFO:Xst:3210 - "D:\ISE\Exp08-ADC32\Top.vf" line 626: Output port <pulse_out> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE\Exp08-ADC32\Top.vf" line 671: Output port <GPIOf0> of the instance <XLXI_6> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Top> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "D:\ISE\Exp08-ADC32\Code\clkdiv.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_4_o_add_0_OUT> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <GPIO>.
+    Related source file is "D:\ISE\Exp08-ADC32\Code\GPIO.v".
+    Found 32-bit register for signal <GPIOf0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <GPIO> synthesized.
+
+Synthesizing Unit <ADC32_MUSER_Top>.
+    Related source file is "D:\ISE\Exp08-ADC32\Top.vf".
+    Summary:
+	no macro.
+Unit <ADC32_MUSER_Top> synthesized.
+
+Synthesizing Unit <add4b_MUSER_Top>.
+    Related source file is "D:\ISE\Exp08-ADC32\Top.vf".
+INFO:Xst:3210 - "D:\ISE\Exp08-ADC32\Top.vf" line 391: Output port <co> of the instance <A0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE\Exp08-ADC32\Top.vf" line 398: Output port <co> of the instance <A1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE\Exp08-ADC32\Top.vf" line 405: Output port <co> of the instance <A2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ISE\Exp08-ADC32\Top.vf" line 412: Output port <co> of the instance <A3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <add4b_MUSER_Top> synthesized.
+
+Synthesizing Unit <add_MUSER_Top>.
+    Related source file is "D:\ISE\Exp08-ADC32\Top.vf".
+    Summary:
+	no macro.
+Unit <add_MUSER_Top> synthesized.
+
+Synthesizing Unit <CLA_MUSER_Top>.
+    Related source file is "D:\ISE\Exp08-ADC32\Top.vf".
+    Summary:
+	no macro.
+Unit <CLA_MUSER_Top> synthesized.
+
+Synthesizing Unit <Display_MUSER_Top>.
+    Related source file is "D:\ISE\Exp08-ADC32\Top.vf".
+WARNING:Xst:2898 - Port 'Disp_num', unconnected in block instance 'XLXI_3', is tied to GND.
+    Summary:
+	no macro.
+Unit <Display_MUSER_Top> synthesized.
+
+Synthesizing Unit <HexTo8SEG>.
+    Related source file is "D:\ISE\Exp08-ADC32\Code\HexTo8SEG.v".
+    Summary:
+	no macro.
+Unit <HexTo8SEG> synthesized.
+
+Synthesizing Unit <Hex2Seg>.
+    Related source file is "D:\ISE\Exp08-ADC32\Code\HexTo8SEG.v".
+    Summary:
+	no macro.
+Unit <Hex2Seg> synthesized.
+
+Synthesizing Unit <MC14495_ZJU>.
+    Related source file is "D:\ISE\Exp08-ADC32\MC14495_ZJU.vf".
+    Summary:
+	no macro.
+Unit <MC14495_ZJU> synthesized.
+
+Synthesizing Unit <SSeg_map>.
+    Related source file is "D:\ISE\Exp08-ADC32\Code\SSeg_map.v".
+WARNING:Xst:647 - Input <Disp_num<63:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <SSeg_map> synthesized.
+
+Synthesizing Unit <MUX2T1_64_MUSER_Top>.
+    Related source file is "D:\ISE\Exp08-ADC32\Top.vf".
+    Summary:
+	no macro.
+Unit <MUX2T1_64_MUSER_Top> synthesized.
+
+Synthesizing Unit <MUX2T1_8_MUSER_Top>.
+    Related source file is "D:\ISE\Exp08-ADC32\Top.vf".
+    Summary:
+	no macro.
+Unit <MUX2T1_8_MUSER_Top> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 2
+ 32-bit register                                       : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <SAnti_jitter.ngc>.
+Reading core <SEnter_2_32.ngc>.
+Reading core <Multi_8CH32.ngc>.
+Reading core <LED_P2S.ngc>.
+Reading core <P2S.ngc>.
+Loading core <SAnti_jitter> for timing and area information for instance <XLXI_1>.
+Loading core <SEnter_2_32> for timing and area information for instance <XLXI_2>.
+Loading core <Multi_8CH32> for timing and area information for instance <XLXI_5>.
+Loading core <LED_P2S> for timing and area information for instance <LED_P2S>.
+Loading core <P2S> for timing and area information for instance <XLXI_1>.
+WARNING:Xst:2677 - Node <GPIOf0_16> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_17> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_18> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_19> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_20> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_21> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_22> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_23> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_24> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_25> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_26> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_27> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_28> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_29> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_30> of sequential type is unconnected in block <XLXI_6>.
+WARNING:Xst:2677 - Node <GPIOf0_31> of sequential type is unconnected in block <XLXI_6>.
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <GPIOf0_1> in Unit <GPIO> is equivalent to the following 3 FFs/Latches, which will be removed : <GPIOf0_2> <GPIOf0_3> <GPIOf0_4> 
+
+Optimizing unit <Top> ...
+
+Optimizing unit <MC14495_ZJU> ...
+
+Optimizing unit <MUX2T1_64_MUSER_Top> ...
+
+Optimizing unit <MUX2T1_8_MUSER_Top> ...
+
+Optimizing unit <ADC32_MUSER_Top> ...
+
+Optimizing unit <CLA_MUSER_Top> ...
+
+Optimizing unit <GPIO> ...
+
+Optimizing unit <HexTo8SEG> ...
+WARNING:Xst:1710 - FF/Latch <XLXI_6/GPIOf0_1> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_31> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_30> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_29> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_28> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_27> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_26> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_25> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_24> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_23> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_22> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_21> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_20> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_19> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_18> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_17> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <XLXI_6/GPIOf0_16> of sequential type is unconnected in block <Top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 0.
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_514/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_514/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_514/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_513/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_513/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_513/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_512/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_512/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_512/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_511/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_511/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_511/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_372/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_372/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_372/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_371/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_371/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_371/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_370/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_370/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_370/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_369/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_369/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8183/XLXI_369/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_514/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_514/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_514/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_513/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_513/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_513/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_512/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_512/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_512/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_511/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_511/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_511/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_372/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_372/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_372/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_371/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_371/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_371/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_370/O_DUMMY> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_370/S0> may hinder timing optimization.
+   You may achieve better results by removing this property
+WARNING:Xst:387 - The KEEP property attached to the net <XLXI_5/MUX1_DispData/MUX8182/XLXI_370/S1> may hinder timing optimization.
+   You may achieve better results by removing this property
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2285
+#      AND2                        : 698
+#      AND3                        : 118
+#      AND4                        : 102
+#      BUF                         : 1
+#      GND                         : 50
+#      INV                         : 92
+#      LUT1                        : 96
+#      LUT2                        : 33
+#      LUT3                        : 75
+#      LUT4                        : 67
+#      LUT5                        : 64
+#      LUT6                        : 199
+#      MUXCY                       : 121
+#      MUXF7                       : 6
+#      OR2                         : 212
+#      OR3                         : 34
+#      OR4                         : 148
+#      VCC                         : 4
+#      XOR2                        : 64
+#      XORCY                       : 101
+# FlipFlops/Latches                : 391
+#      FD                          : 205
+#      FDC                         : 46
+#      FDC_1                       : 12
+#      FDCE                        : 4
+#      FDE                         : 95
+#      FDRE                        : 29
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 38
+#      IBUF                        : 21
+#      OBUF                        : 17
+# Others                           : 144
+#      FMAP                        : 144
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             391  out of  202800     0%  
+ Number of Slice LUTs:                  626  out of  101400     0%  
+    Number used as Logic:               626  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    773
+   Number with an unused Flip Flop:     382  out of    773    49%  
+   Number with an unused LUT:           147  out of    773    19%  
+   Number of fully used LUT-FF pairs:   244  out of    773    31%  
+   Number of unique control sets:        18
+
+IO Utilization: 
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of    400     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100mhz                         | BUFGP                  | 347   |
+XLXI_1/clk1                        | BUFG                   | 41    |
+XLXI_2/push(XLXI_2/push1:O)        | NONE(*)(XLXI_2/state_0)| 3     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 14.307ns (Maximum Frequency: 69.897MHz)
+   Minimum input arrival time before clock: 2.109ns
+   Maximum output required time after clock: 0.658ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 14.307ns (frequency: 69.897MHz)
+  Total number of paths / destination ports: 606718 / 435
+-------------------------------------------------------------------------
+Delay:               14.307ns (Levels of Logic = 24)
+  Source:            XLXI_2/Bi_2 (FF)
+  Destination:       XLXI_11/XLXI_1/buffer_2 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: XLXI_2/Bi_2 to XLXI_11/XLXI_1/buffer_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.236   0.647  Bi_2 (Bi<2>)
+     end scope: 'XLXI_2:Bi<2>'
+     XOR2:I0->O            8   0.043   0.642  XLXI_7/XLXI_23/A2/XLXI_2 (XLXI_7/XLXI_23/XLXN_20)
+     AND4:I1->O            1   0.053   0.495  XLXI_7/XLXI_23/XLXI_5/XLXI_11 (XLXI_7/XLXI_23/XLXI_5/XLXN_50)
+     OR4:I3->O             4   0.161   0.512  XLXI_7/XLXI_23/XLXI_5/XLXI_14 (XLXI_7/XLXN_35)
+     AND4:I3->O            1   0.161   0.495  XLXI_7/XLXI_26/XLXI_11 (XLXI_7/XLXI_26/XLXN_50)
+     OR4:I3->O             1   0.161   0.613  XLXI_7/XLXI_26/XLXI_14 (XLXI_7/XLXN_49)
+     OR2:I0->O             9   0.043   0.648  XLXI_7/XLXI_13 (XLXI_7/XLXN_65)
+     AND2:I1->O            1   0.053   0.603  XLXI_7/XLXI_25/XLXI_1 (XLXI_7/XLXI_25/XLXN_22)
+     OR2:I1->O             5   0.053   0.626  XLXI_7/XLXI_25/XLXI_2 (XLXI_7/XLXN_61)
+     AND2:I1->O            1   0.053   0.603  XLXI_7/XLXI_18/XLXI_5/XLXI_1 (XLXI_7/XLXI_18/XLXI_5/XLXN_22)
+     OR2:I1->O             2   0.053   0.608  XLXI_7/XLXI_18/XLXI_5/XLXI_2 (XLXI_7/XLXI_18/XLXN_28)
+     XOR2:I1->O            6   0.053   0.641  XLXI_7/XLXI_18/A1/XLXI_1 (XLXN_66<21>)
+     begin scope: 'XLXI_5:data7<21>'
+     AND2:I0->O            1   0.043   0.613  MUX1_DispData/MUX8182/XLXI_493 (MUX1_DispData/MUX8182/XLXN_1798)
+     begin scope: 'XLXI_5/MUX1_DispData/MUX8182/XLXI_512:I0'
+     OR4:I0->O             1   0.043   0.613  I_36_112 (S0)
+     OR2:I0->O            11   0.043   0.395  I_36_94 (O_DUMMY)
+     end scope: 'XLXI_5/MUX1_DispData/MUX8182/XLXI_512:O'
+     end scope: 'XLXI_5:Disp_num<21>'
+     INV:I->O              8   0.317   0.561  XLXI_11/XLXI_2/HTS2/MSEG/XLXI_49 (XLXI_11/XLXI_2/HTS2/MSEG/XLXN_143)
+     AND4:I2->O            2   0.134   0.500  XLXI_11/XLXI_2/HTS2/MSEG/XLXI_51 (XLXI_11/XLXI_2/HTS2/MSEG/XLXN_93)
+     OR4:I3->O             1   0.161   0.603  XLXI_11/XLXI_2/HTS2/MSEG/XLXI_33 (XLXI_11/XLXI_2/HTS2/MSEG/XLXN_103)
+     OR2:I1->O             1   0.053   0.613  XLXI_11/XLXI_2/HTS2/MSEG/XLXI_40 (XLXI_11/XLXN_5<23>)
+     AND2:I0->O            1   0.043   0.603  XLXI_11/XLXI_4/XLXI_3/XLXI_35 (XLXI_11/XLXI_4/XLXI_3/XLXN_73)
+     OR2:I1->O             1   0.053   0.613  XLXI_11/XLXI_4/XLXI_3/XLXI_44 (XLXI_11/XLXN_13<23>)
+     begin scope: 'XLXI_11/XLXI_1:P_Data<23>'
+     LUT6:I0->O            1   0.043   0.000  buffer_23_rstpot (buffer_23_rstpot)
+     FD:D                     -0.000          buffer_23
+    ----------------------------------------
+    Total                     14.307ns (2.056ns logic, 12.251ns route)
+                                       (14.4% logic, 85.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_1/clk1'
+  Clock period: 2.152ns (frequency: 464.587MHz)
+  Total number of paths / destination ports: 1454 / 90
+-------------------------------------------------------------------------
+Delay:               2.152ns (Levels of Logic = 7)
+  Source:            XLXI_1/counter_8 (FF)
+  Destination:       XLXI_1/Key_x_0 (FF)
+  Source Clock:      XLXI_1/clk1 rising
+  Destination Clock: XLXI_1/clk1 rising
+
+  Data Path: XLXI_1/counter_8 to XLXI_1/Key_x_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.236   0.615  counter_8 (counter<8>)
+     LUT5:I0->O            1   0.043   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           8   0.013   0.378  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4>)
+     INV:I->O              7   0.054   0.373  _n0225_inv1_cepot_INV_0 (_n0225_inv1_cepot)
+     FDE:CE                    0.161          Key_x_0
+    ----------------------------------------
+    Total                      2.152ns (0.786ns logic, 1.366ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_2/push'
+  Clock period: 1.069ns (frequency: 935.060MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               1.069ns (Levels of Logic = 1)
+  Source:            XLXI_2/state_0 (FF)
+  Destination:       XLXI_2/state_0 (FF)
+  Source Clock:      XLXI_2/push rising
+  Destination Clock: XLXI_2/push rising
+
+  Data Path: XLXI_2/state_0 to XLXI_2/state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.236   0.440  state_0 (state<0>)
+     INV:I->O              1   0.054   0.339  Result<0>1_INV_0 (Result<0>)
+     FDE:D                    -0.000          state_0
+    ----------------------------------------
+    Total                      1.069ns (0.290ns logic, 0.779ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 1195 / 100
+-------------------------------------------------------------------------
+Offset:              2.089ns (Levels of Logic = 10)
+  Source:            SW<2> (PAD)
+  Destination:       XLXI_1/SW_OK_0 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: SW<2> to XLXI_1/SW_OK_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.625  SW_2_IBUF (SW_2_IBUF)
+     begin scope: 'XLXI_1:SW<2>'
+     LUT6:I0->O            1   0.043   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4>)
+     MUXCY:CI->O          43   0.013   0.471  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<5> (sw_temp[15]_SW[15]_not_equal_100_o)
+     INV:I->O             17   0.054   0.429  _n0243_inv1_cepot_cepot_INV_0 (_n0243_inv1_cepot_cepot)
+     FDE:CE                    0.161          SW_OK_0
+    ----------------------------------------
+    Total                      2.089ns (0.563ns logic, 1.525ns route)
+                                       (27.0% logic, 73.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_1/clk1'
+  Total number of paths / destination ports: 176 / 41
+-------------------------------------------------------------------------
+Offset:              2.109ns (Levels of Logic = 6)
+  Source:            K_COL<3> (PAD)
+  Destination:       XLXI_1/Key_x_1 (FF)
+  Destination Clock: XLXI_1/clk1 rising
+
+  Data Path: K_COL<3> to XLXI_1/Key_x_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.000   0.550  K_COL_3_IBUF (K_COL_3_IBUF)
+     begin scope: 'XLXI_1:Key_y<3>'
+     LUT4:I0->O           12   0.043   0.674  out1 (n0016)
+     LUT6:I0->O            3   0.043   0.362  _n0295<0>1 (_n0295<0>)
+     LUT6:I5->O            1   0.043   0.350  Key_x[4]_PWR_1_o_select_74_OUT<1>1 (Key_x[4]_PWR_1_o_select_74_OUT<4>)
+     LUT3:I2->O            1   0.043   0.000  Key_x_4_dpot (Key_x_4_dpot)
+     FDE:D                    -0.000          Key_x_4
+    ----------------------------------------
+    Total                      2.109ns (0.172ns logic, 1.937ns route)
+                                       (8.2% logic, 91.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_1/clk1'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              0.658ns (Levels of Logic = 2)
+  Source:            XLXI_1/Key_x_4 (FF)
+  Destination:       K_ROW<4> (PAD)
+  Source Clock:      XLXI_1/clk1 rising
+
+  Data Path: XLXI_1/Key_x_4 to K_ROW<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.236   0.422  Key_x_4 (Key_x<4>)
+     end scope: 'XLXI_1:Key_x<4>'
+     OBUF:I->O                 0.000          K_ROW_4_OBUF (K_ROW<4>)
+    ----------------------------------------
+    Total                      0.658ns (0.236ns logic, 0.422ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              0.625ns (Levels of Logic = 2)
+  Source:            XLXI_11/XLXI_1/s_clk (FF)
+  Destination:       SEGCLK (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: XLXI_11/XLXI_1/s_clk to SEGCLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.236   0.389  s_clk (s_clk)
+     end scope: 'XLXI_11/XLXI_1:s_clk'
+     OBUF:I->O                 0.000          SEGCLK_OBUF (SEGCLK)
+    ----------------------------------------
+    Total                      0.625ns (0.236ns logic, 0.389ns route)
+                                       (37.7% logic, 62.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock XLXI_1/clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_1/clk1    |    2.152|         |         |         |
+clk_100mhz     |    1.292|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_2/push
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_1/clk1    |    0.818|         |         |         |
+XLXI_2/push    |    1.069|         |         |         |
+clk_100mhz     |    1.326|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_1/clk1    |    1.100|         |         |         |
+XLXI_2/push    |    6.074|         |         |         |
+clk_100mhz     |   14.307|    1.289|    5.960|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.36 secs
+ 
+--> 
+
+Total memory usage is 415056 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   89 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

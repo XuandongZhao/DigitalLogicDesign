@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/ISE/Exp07-Disp/Code/InputT32.v -lang verilog -prj Exp07-Disp -o InputT32.spl -module InputT32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w InputT32.spl D:/ISE/Exp07-Disp/InputT32.sym 

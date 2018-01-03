@@ -1,0 +1,86 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MUX32bitTO1.vf
+// /___/   /\     Timestamp : 11/24/2016 16:07:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog C:/.Xilinx/Framework/MUX32bitTO1.vf -w C:/.Xilinx/Framework/MUX32bitTO1.sch
+//Design Name: MUX32bitTO1
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MUX32bitTO1(I0, 
+                   I1, 
+                   I2, 
+                   I3, 
+                   I4, 
+                   I5, 
+                   I6, 
+                   I7, 
+                   s, 
+                   o);
+
+    input [31:0] I0;
+    input [31:0] I1;
+    input [31:0] I2;
+    input [31:0] I3;
+    input [31:0] I4;
+    input [31:0] I5;
+    input [31:0] I6;
+    input [31:0] I7;
+    input [2:0] s;
+   output [31:0] o;
+   
+   
+   MUX8bitTO1  XLXI_1 (.I0(I0[7:0]), 
+                      .I1(I1[7:0]), 
+                      .I2(I2[7:0]), 
+                      .I3(I3[7:0]), 
+                      .I4(I4[7:0]), 
+                      .I5(I5[7:0]), 
+                      .I6(I6[7:0]), 
+                      .I7(I7[7:0]), 
+                      .s(), 
+                      .o(o[7:0]));
+   MUX8bitTO1  XLXI_2 (.I0(I0[15:8]), 
+                      .I1(I1[15:8]), 
+                      .I2(I2[15:8]), 
+                      .I3(I3[15:8]), 
+                      .I4(I4[15:8]), 
+                      .I5(I5[15:8]), 
+                      .I6(I6[15:8]), 
+                      .I7(I7[15:8]), 
+                      .s(), 
+                      .o(o[15:8]));
+   MUX8bitTO1  XLXI_4 (.I0(I0[23:16]), 
+                      .I1(I1[23:16]), 
+                      .I2(I2[23:16]), 
+                      .I3(I3[23:16]), 
+                      .I4(I4[23:16]), 
+                      .I5(I5[23:16]), 
+                      .I6(I6[23:16]), 
+                      .I7(I7[23:16]), 
+                      .s(), 
+                      .o(o[23:16]));
+   MUX8bitTO1  XLXI_5 (.I0(I0[31:24]), 
+                      .I1(I1[31:24]), 
+                      .I2(I2[31:24]), 
+                      .I3(I3[31:24]), 
+                      .I4(I4[31:24]), 
+                      .I5(I5[31:24]), 
+                      .I6(I6[31:24]), 
+                      .I7(I7[31:24]), 
+                      .s(), 
+                      .o(o[31:24]));
+endmodule

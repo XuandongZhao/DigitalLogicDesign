@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Oct 28 07:23:40 2016
+
+drc -z lamp_zxd.ncd lamp_zxd.pcf
+
+DRC detected 0 errors and 0 warnings.

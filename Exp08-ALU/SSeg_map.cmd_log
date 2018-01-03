@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family kintex7 -verilog SSeg_map_drc.vf -w F:/MyDocuments/framework/SSeg_map.sch 
+vhdtdtfi -lib work F:/MyDocuments/framework/SSeg_map.v -lang verilog -prj framework -o SSeg_map.spl -module SSeg_map -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 SSeg_map.spl F:/MyDocuments/framework/SSeg_map.sym 

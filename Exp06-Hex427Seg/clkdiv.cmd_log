@@ -1,0 +1,14 @@
+vhdtdtfi -lib work D:/ISE/Exp06-Hex427Seg/Code/clkdiv.v -lang verilog -prj Exp06-Hex427Seg -o clkdiv.spl -module clkdiv -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/ISE/Exp06-Hex427Seg/clkdiv.sym 
+vhdtdtfi -lib work D:/ISE/Exp06-Hex427Seg/Code/clkdiv.v -lang verilog -prj Exp06-Hex427Seg -o clkdiv.spl -module clkdiv -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/ISE/Exp06-Hex427Seg/clkdiv.sym 
+vhdtdtfi -lib work D:/ISE/Exp06-Hex427Seg/Code/clkdiv.v -lang verilog -prj Exp06-Hex427Seg -o clkdiv.spl -module clkdiv -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/ISE/Exp06-Hex427Seg/clkdiv.sym 
+vhdtdtfi -lib work D:/ISE/Exp06-Hex427Seg/Code/clkdiv.v -lang verilog -prj Exp06-Hex427Seg -o clkdiv.spl -module clkdiv -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/ISE/Exp06-Hex427Seg/clkdiv.sym 
+vhdtdtfi -lib work D:/ISE/Exp06-Hex427Seg/Code/clkdiv.v -lang verilog -prj Exp06-Hex427Seg -o clkdiv.spl -module clkdiv -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/ISE/Exp06-Hex427Seg/clkdiv.sym 
+vhdtdtfi -lib work D:/ISE/Exp06-Hex427Seg/Code/clkdiv.v -lang verilog -prj Exp06-Hex427Seg -o clkdiv.spl -module clkdiv -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/ISE/Exp06-Hex427Seg/clkdiv.sym 
+vhdtdtfi -lib work D:/ISE/Exp06-Hex427Seg/Code/clkdiv.v -lang verilog -prj Exp06-Hex427Seg -o clkdiv.spl -module clkdiv -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/ISE/Exp06-Hex427Seg/clkdiv.sym 

@@ -1,0 +1,1 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Display_drc.vf -w D:/ISE/Top/Code/Display.sch 

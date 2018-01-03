@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Seg_map_drc.vf
+// /___/   /\     Timestamp : 11/19/2016 17:07:04
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog Seg_map_drc.vf -w F:/MyDocuments/framework/Seg_map.sch
+//Design Name: Seg_map
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Seg_map(Hexs, 
+               Scan, 
+               Seg_map);
+
+    input [31:0] Hexs;
+    input [2:0] Scan;
+   output [7:0] Seg_map;
+   
+   
+   MUX4T1_4  XLXI_1 (.I0(Hexs[3:0]), 
+                    .I1(Hexs[11:8]), 
+                    .I2(Hexs[19:16]), 
+                    .I3(Hexs[27:24]), 
+                    .s(Scan[1:0]), 
+                    .O(Seg_map[3:0]));
+   MUX4T1_4  XLXI_2 (.I0(Hexs[7:4]), 
+                    .I1(Hexs[15:12]), 
+                    .I2(Hexs[23:20]), 
+                    .I3(Hexs[31:28]), 
+                    .s(Scan[1:0]), 
+                    .O(Seg_map[7:4]));
+endmodule

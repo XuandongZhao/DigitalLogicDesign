@@ -1,0 +1,1 @@
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/zxd_CS/LCDF/Exp11-REGS/code/MUX441.sch MUX441.tfi 

@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family kintex7 -refsym MUX8T1_32 D:/ISE/Exp08-ADC32/Code/MUX8T1_32.sch D:/ISE/Exp08-ADC32/MUX8T1_32.sym 
+sch2sym -intstyle ise -family kintex7 -refsym MUX8T1_32 D:/ISE/Exp08-ADC32/MUX8T1_32.sch D:/ISE/Exp08-ADC32/MUX8T1_32.sym 
+sch2sym -intstyle ise -family kintex7 -refsym MUX8T1_32 D:/ISE/Exp08-ADC32/MUX8T1_32.sch D:/ISE/Exp08-ADC32/MUX8T1_32.sym 
+sch2sym -intstyle ise -family kintex7 -refsym MUX8T1_32 D:/ISE/Exp08-ADC32/MUX8T1_32.sch D:/ISE/Exp08-ADC32/MUX8T1_32.sym 

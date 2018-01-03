@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family kintex7 -refsym MC14495_ZJU D:/ISE/Exp06-Hex427Seg/Code/MC14495_ZJU.sch D:/ISE/Exp06-Hex427Seg/MC14495_ZJU.sym 
+sch2sym -intstyle ise -family kintex7 -refsym MC14495_ZJU D:/ISE/Exp06-Hex427Seg/Code/MC14495_ZJU.sch D:/ISE/Exp06-Hex427Seg/MC14495_ZJU.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog MC14495_ZJU_drc.vf -w D:/ISE/Exp06-Hex427Seg/Code/MC14495_ZJU.sch 

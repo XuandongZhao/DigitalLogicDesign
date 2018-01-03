@@ -1,0 +1,47 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ALU32.vf
+// /___/   /\     Timestamp : 11/22/2016 10:34:38
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog ALU32.vf -w H:/MyDocuments/logic/Exp082-ALU/ALU32.sch
+//Design Name: ALU32
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module ALU32(A0, 
+             A1, 
+             A2, 
+             A3, 
+             CLK, 
+             D, 
+             O);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input CLK;
+    input D;
+   output O;
+   
+   
+   SRL16 #( .INIT(16'h0000) ) XLXI_1 (.A0(A0), 
+                 .A1(A1), 
+                 .A2(A2), 
+                 .A3(A3), 
+                 .CLK(CLK), 
+                 .D(D), 
+                 .Q(O));
+endmodule

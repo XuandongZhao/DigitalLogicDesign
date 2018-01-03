@@ -1,0 +1,19 @@
+[Inputs]
+clk
+RSTN
+readn
+=Key_y[3:0]=
+=SW[15:0]=
+[Outputs]
+Key_ready
+CR
+rst
+=Key_x[4:0]=
+=Key_out[4:0]=
+=pulse_out[3:0]=
+=BTN_OK[3:0]=
+=SW_OK[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel SAnti_jitter
+

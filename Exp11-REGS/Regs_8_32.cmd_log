@@ -1,0 +1,4 @@
+vhdtdtfi -lib work D:/ISE/FSM/code/Regs_8_32.v -lang verilog -prj FSM -o Regs_8_32.spl -module Regs_8_32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Regs_8_32.spl D:/ISE/FSM/Regs_8_32.sym 
+vhdtdtfi -lib work D:/ISE/Exp10-FSM/code/Regs_8_32.v -lang verilog -prj FSM -o Regs_8_32.spl -module Regs_8_32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Regs_8_32.spl D:/ISE/Exp10-FSM/Regs_8_32.sym 

@@ -1,0 +1,10 @@
+sch2sym -intstyle ise -family kintex7 -refsym RS_EN D:/ISE/Exp09-Locker/RS_EN.sch D:/ISE/Exp09-Locker/RS_EN.sym 
+xst -intstyle ise -ifn "D:/ISE/Exp09-Locker/RS_EN.xst" -ofn "D:/ISE/Exp09-Locker/RS_EN.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym RS_EN D:/ISE/Exp09-Locker/RS_EN.sch D:/ISE/Exp09-Locker/RS_EN.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym RS_EN D:/ISE/Exp09-Locker/RS_EN.sch D:/ISE/Exp09-Locker/RS_EN.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym RS_EN D:/ISE/Exp09-Locker/RS_EN.sch D:/ISE/Exp09-Locker/RS_EN.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym RS_EN D:/ISE/Exp09-Locker/RS_EN.sch D:/ISE/Exp09-Locker/RS_EN.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym RS_EN D:/ISE/Exp09-Locker/RS_EN.sch D:/ISE/Exp09-Locker/RS_EN.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym RS_EN D:/ISE/Exp09-Locker/RS_EN.sch D:/ISE/Exp09-Locker/RS_EN.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym RS_EN D:/ISE/Exp09-Locker/RS_EN.sch D:/ISE/Exp09-Locker/RS_EN.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym RS_EN D:/ISE/Exp09-Locker/RS_EN.sch D:/ISE/Exp09-Locker/RS_EN.sym 

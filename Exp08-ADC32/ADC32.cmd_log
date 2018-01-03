@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/ISE/Exp08-ADC32/ADC32.xst" -ofn "D:/ISE/Exp08-ADC32/ADC32.syr" 
+xst -intstyle ise -ifn "D:/ISE/Exp08-ADC32/ADC32.xst" -ofn "D:/ISE/Exp08-ADC32/ADC32.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym ADC32 D:/ISE/Exp08-ADC32/Code/ADC32.sch D:/ISE/Exp08-ADC32/ADC32.sym 

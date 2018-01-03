@@ -1,0 +1,3 @@
+vhdl work "RS_NAND.vhf"
+vhdl work "RS_EN.vhf"
+vhdl work "D_EN.vhf"

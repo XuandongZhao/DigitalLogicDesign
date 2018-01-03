@@ -1,0 +1,14 @@
+// Verilog instantiation template created from schematic D:\zxd_CS\LCDF\Exp11-REGS\code\MUX441.sch - Thu Mar 09 15:24:07 2017
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   MUX441 UUT (
+		.o(    ), 
+		.I2(    ), 
+		.I0(    ), 
+		.I1(    ), 
+		.s(    ), 
+		.I3(    )
+   );

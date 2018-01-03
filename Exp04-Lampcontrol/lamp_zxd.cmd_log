@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family kintex7 -verilog lamp_zxd_drc.vf -w E:/ST/lampcontrol_zxd/lamp_zxd.sch 
+xst -intstyle ise -ifn "E:/ST/lampcontrol_zxd/lamp_zxd.xst" -ofn "E:/ST/lampcontrol_zxd/lamp_zxd.syr" 
+xst -intstyle ise -ifn "E:/ST/lampcontrol_zxd/lamp_zxd.xst" -ofn "E:/ST/lampcontrol_zxd/lamp_zxd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 lamp_zxd.ngc lamp_zxd.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o lamp_zxd_map.ncd lamp_zxd.ngd lamp_zxd.pcf 
+par -w -intstyle ise -ol high -mt off lamp_zxd_map.ncd lamp_zxd.ncd lamp_zxd.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml lamp_zxd.twx lamp_zxd.ncd -o lamp_zxd.twr lamp_zxd.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f lamp_zxd.ut lamp_zxd.ncd 

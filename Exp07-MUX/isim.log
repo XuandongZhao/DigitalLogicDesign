@@ -1,0 +1,11 @@
+ISim log file
+Running: D:\ISE\Exp07-MUX\MUX8T1_32_MUX8T1_32_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/ISE/Exp07-MUX/MUX8T1_32_MUX8T1_32_sch_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/ISE/Exp07-MUX/Code/MUN8T1_32_test.v" Line 34.  For instance MUX8T1_32_MUX8T1_32_sch_tb/UUT/, width 32 of formal port o is not equal to width 1 of actual signal o.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

@@ -1,0 +1,14 @@
+[Inputs]
+=Scan[1:0]=
+=Hexs[15:0]=
+=point[3:0]=
+=LES[3:0]=
+[Outputs]
+p
+LE
+=Hex[3:0]=
+=AN[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel dispsync
+

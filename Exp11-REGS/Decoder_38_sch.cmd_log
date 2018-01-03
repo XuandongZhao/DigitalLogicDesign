@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family kintex7 -w -refsym Decoder_38_sch D:/ISE/FSM/code/Decoder_38_sch.sch D:/ISE/FSM/Decoder_38_sch.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym Decoder_38_sch D:/ISE/Exp10-FSM/code/Decoder_38_sch.sch D:/ISE/Exp10-FSM/Decoder_38_sch.sym 

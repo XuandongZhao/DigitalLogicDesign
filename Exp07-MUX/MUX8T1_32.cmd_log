@@ -1,0 +1,11 @@
+sch2hdl -intstyle ise -family kintex7 -verilog MUX8T1_32_drc.vf -w D:/ISE/Exp07-MUX/Code/MUX8T1_32.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX8T1_32 D:/ISE/Exp07-MUX/Code/MUX8T1_32.sch D:/ISE/Exp07-MUX/MUX8T1_32.sym 
+xst -intstyle ise -ifn "D:/ISE/Exp07-MUX/MUX8T1_32.xst" -ofn "D:/ISE/Exp07-MUX/MUX8T1_32.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-2L MUX8T1_32.ngc MUX8T1_32.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MUX8T1_32_map.ncd MUX8T1_32.ngd MUX8T1_32.pcf 
+xst -intstyle ise -ifn "D:/ISE/Exp07-MUX/MUX8T1_32.xst" -ofn "D:/ISE/Exp07-MUX/MUX8T1_32.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-2L MUX8T1_32.ngc MUX8T1_32.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MUX8T1_32_map.ncd MUX8T1_32.ngd MUX8T1_32.pcf 
+par -w -intstyle ise -ol high -mt off MUX8T1_32_map.ncd MUX8T1_32.ncd MUX8T1_32.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml MUX8T1_32.twx MUX8T1_32.ncd -o MUX8T1_32.twr MUX8T1_32.pcf 
+bitgen -intstyle ise -f MUX8T1_32.ut MUX8T1_32.ncd 

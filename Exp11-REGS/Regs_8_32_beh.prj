@@ -1,0 +1,8 @@
+verilog work "MUX441.vf"
+verilog work "MUX8T1_8.vf"
+verilog work "Decoder_38_sch.vf"
+verilog work "code/Reg_32.v"
+verilog work "MUX8T1_32.vf"
+verilog work "HTC138_sch.vf"
+verilog work "code/Regs_8_32.v"
+verilog work "D:/Software/14.7/ISE_DS/ISE//verilog/src/glbl.v"

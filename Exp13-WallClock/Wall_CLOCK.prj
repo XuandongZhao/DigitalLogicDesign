@@ -1,0 +1,6 @@
+verilog work "Code/ms_1000.v"
+verilog work "Code/count_60.v"
+verilog work "Code/count_24.v"
+verilog work "Code/clk_1ms.v"
+verilog work "Code/Wall_CLOCK.v"
+verilog work "MUX441.vf"

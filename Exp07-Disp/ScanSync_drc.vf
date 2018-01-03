@@ -1,0 +1,69 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ScanSync_drc.vf
+// /___/   /\     Timestamp : 11/17/2016 15:14:03
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\Software\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog ScanSync_drc.vf -w D:/ISE/Exp07-Disp/Code/ScanSync.sch
+//Design Name: ScanSync
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module ScanSync(Hexs, 
+                LES, 
+                point, 
+                Scan, 
+                AN, 
+                Hex, 
+                LE, 
+                p);
+
+    input [15:0] Hexs;
+    input [3:0] LES;
+    input [3:0] point;
+    input [1:0] Scan;
+   output [3:0] AN;
+   output [3:0] Hex;
+   output LE;
+   output p;
+   
+   wire G0;
+   wire [3:0] o;
+   wire V5;
+   
+   MUX441  MUX1 (.I0({V5, V5, V5, G0}), 
+                .I1({V5, V5, G0, V5}), 
+                .I2({V5, G0, V5, V5}), 
+                .I3({G0, V5, V5, V5}), 
+                .s(Scan[1:0]), 
+                .O(AN[3:0]));
+   MUX441  MUX2 (.I0(Hexs[3:0]), 
+                .I1(Hexs[7:4]), 
+                .I2(Hexs[11:8]), 
+                .I3(Hexs[15:12]), 
+                .s(Scan[1:0]), 
+                .O(Hex[3:0]));
+   MUX441  MUX3 (.I0({LES[0], point[0], G0, G0}), 
+                .I1({LES[0], point[1], G0, G0}), 
+                .I2({LES[2], point[1], G0, G0}), 
+                .I3({LES[3], point[3], G0, G0}), 
+                .s(Scan[1:0]), 
+                .O(o[3:0]));
+   BUF  XLXI_4 (.I(o[2]), 
+               .O(p));
+   BUF  XLXI_5 (.I(o[3]), 
+               .O(LE));
+   VCC  XLXI_6 (.P(V5));
+   GND  XLXI_7 (.G(G0));
+endmodule

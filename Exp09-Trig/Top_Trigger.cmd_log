@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "D:/ISE/Exp09-Trig/Top_Trigger.xst" -ofn "D:/ISE/Exp09-Trig/Top_Trigger.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_Trigger_ucf.ucf -p xc7k160t-fbg484-2L Top_Trigger.ngc Top_Trigger.ngd  
+xst -intstyle ise -ifn "D:/ISE/Exp09-Trig/Top_Trigger.xst" -ofn "D:/ISE/Exp09-Trig/Top_Trigger.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_Trigger_ucf.ucf -p xc7k160t-fbg484-2L Top_Trigger.ngc Top_Trigger.ngd  
+map -intstyle ise -p xc7k160t-fbg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_Trigger_map.ncd Top_Trigger.ngd Top_Trigger.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_Trigger_ucf.ucf -p xc7k160t-fbg484-2L Top_Trigger.ngc Top_Trigger.ngd  
+map -intstyle ise -p xc7k160t-fbg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_Trigger_map.ncd Top_Trigger.ngd Top_Trigger.pcf 
+xst -intstyle ise -ifn "D:/ISE/Exp09-Trig/Top_Trigger.xst" -ofn "D:/ISE/Exp09-Trig/Top_Trigger.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_Trigger_ucf.ucf -p xc7k160t-ffg676-2L Top_Trigger.ngc Top_Trigger.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_Trigger_map.ncd Top_Trigger.ngd Top_Trigger.pcf 
+par -w -intstyle ise -ol high -mt off Top_Trigger_map.ncd Top_Trigger.ncd Top_Trigger.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_Trigger.twx Top_Trigger.ncd -o Top_Trigger.twr Top_Trigger.pcf -ucf Top_Trigger_ucf.ucf 
+bitgen -intstyle ise -f Top_Trigger.ut Top_Trigger.ncd 

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\zxd_CS\LCDF\Top\impact.xsl
+OUTFILE=D:\zxd_CS\LCDF\Top\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\zxd_CS\LCDF\Top
+LICENSE=iMPACT
+USER_INFO=iMPACT

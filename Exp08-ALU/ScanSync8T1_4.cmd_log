@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog ScanSync8T1_4_drc.vf -w F:/MyDocuments/framework/ScanSync8T1_4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym ScanSync8T1_4 F:/MyDocuments/framework/ScanSync8T1_4.sch F:/MyDocuments/framework/ScanSync8T1_4.sym 

@@ -1,0 +1,38 @@
+xst -intstyle ise -ifn "F:/MyDocuments/framework/exp82.xst" -ofn "F:/MyDocuments/framework/exp82.syr" 
+xst -intstyle ise -ifn "F:/MyDocuments/framework/exp82.xst" -ofn "F:/MyDocuments/framework/exp82.syr" 
+xst -intstyle ise -ifn "F:/MyDocuments/framework/exp82.xst" -ofn "F:/MyDocuments/framework/exp82.syr" 
+xst -intstyle ise -ifn "F:/MyDocuments/framework/exp82.xst" -ofn "F:/MyDocuments/framework/exp82.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Framework_ucf.ucf -p xc7k160t-ffg676-2L exp82.ngc exp82.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o exp82_map.ncd exp82.ngd exp82.pcf 
+par -w -intstyle ise -ol high -mt off exp82_map.ncd exp82.ncd exp82.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml exp82.twx exp82.ncd -o exp82.twr exp82.pcf -ucf Framework_ucf.ucf 
+bitgen -intstyle ise -f exp82.ut exp82.ncd 
+xst -intstyle ise -ifn "F:/MyDocuments/framework/exp82.xst" -ofn "F:/MyDocuments/framework/exp82.syr" 
+xst -intstyle ise -ifn "F:/MyDocuments/framework/exp82.xst" -ofn "F:/MyDocuments/framework/exp82.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Framework_ucf.ucf -p xc7k160t-ffg676-2L exp82.ngc exp82.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o exp82_map.ncd exp82.ngd exp82.pcf 
+par -w -intstyle ise -ol high -mt off exp82_map.ncd exp82.ncd exp82.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml exp82.twx exp82.ncd -o exp82.twr exp82.pcf -ucf Framework_ucf.ucf 
+bitgen -intstyle ise -f exp82.ut exp82.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Framework_ucf.ucf -p xc7k160t-ffg676-2L exp82.ngc exp82.ngd  
+xst -intstyle ise -ifn "F:/MyDocuments/framework/exp82.xst" -ofn "F:/MyDocuments/framework/exp82.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Framework_ucf.ucf -p xc7k160t-ffg676-2L exp82.ngc exp82.ngd  
+xst -intstyle ise -ifn "F:/MyDocuments/framework/exp82.xst" -ofn "F:/MyDocuments/framework/exp82.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Framework_ucf.ucf -p xc7k160t-ffg676-2L exp82.ngc exp82.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Framework_ucf.ucf -p xc7k160t-ffg676-2L exp82.ngc exp82.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o exp82_map.ncd exp82.ngd exp82.pcf 
+par -w -intstyle ise -ol high -mt off exp82_map.ncd exp82.ncd exp82.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml exp82.twx exp82.ncd -o exp82.twr exp82.pcf -ucf Framework_ucf.ucf 
+bitgen -intstyle ise -f exp82.ut exp82.ncd 
+xst -intstyle ise -ifn "F:/MyDocuments/framework/exp82.xst" -ofn "F:/MyDocuments/framework/exp82.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Framework_ucf.ucf -p xc7k160t-ffg676-2L exp82.ngc exp82.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o exp82_map.ncd exp82.ngd exp82.pcf 
+par -w -intstyle ise -ol high -mt off exp82_map.ncd exp82.ncd exp82.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml exp82.twx exp82.ncd -o exp82.twr exp82.pcf -ucf Framework_ucf.ucf 
+bitgen -intstyle ise -f exp82.ut exp82.ncd 
+xst -intstyle ise -ifn "D:/ISE/Exp08-ALU/exp82.xst" -ofn "D:/ISE/Exp08-ALU/exp82.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Framework_ucf.ucf -p xc7k160t-ffg676-2L exp82.ngc exp82.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o exp82_map.ncd exp82.ngd exp82.pcf 
+par -w -intstyle ise -ol high -mt off exp82_map.ncd exp82.ncd exp82.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml exp82.twx exp82.ncd -o exp82.twr exp82.pcf -ucf Framework_ucf.ucf 
+bitgen -intstyle ise -f exp82.ut exp82.ncd 

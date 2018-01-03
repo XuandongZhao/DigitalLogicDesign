@@ -1,0 +1,5 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp07-Disp/I2Disp.vf,-w,D:/ISE/Exp07-Disp/Code/I2Disp.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp07-Disp/ScanSync.vf,-w,D:/ISE/Exp07-Disp/Code/ScanSync.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp07-Disp/Seg7_Dev16.vf,-w,D:/ISE/Exp07-Disp/Code/Seg7_Dev16.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp07-Disp/I2Disp.vf,-w,D:/ISE/Exp07-Disp/Code/I2Disp.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp07-Disp/Seg7_Dev16.vf,-w,D:/ISE/Exp07-Disp/Code/Seg7_Dev16.sch

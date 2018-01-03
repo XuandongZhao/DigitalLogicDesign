@@ -1,0 +1,40 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\Software\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc Top_Trigger_ucf.ucf -p
+xc7k160t-ffg676-2L Top_Trigger.ngc Top_Trigger.ngd
+
+Reading NGO file "D:/ISE/Exp09-Trig/Top_Trigger.ngc" ...
+Loading design module "D:\ISE\Exp09-Trig/SAnti_jitter.ngc"...
+Loading design module "D:\ISE\Exp09-Trig/SPLIO.ngc"...
+Loading design module "D:\ISE\Exp09-Trig/PLIO.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Top_Trigger_ucf.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'XLXI_2/readn' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 257764 kilobytes
+
+Writing NGD file "Top_Trigger.ngd" ...
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   8 sec
+
+Writing NGDBUILD log file "Top_Trigger.bld"...

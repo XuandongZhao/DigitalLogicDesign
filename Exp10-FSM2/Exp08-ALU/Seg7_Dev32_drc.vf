@@ -1,0 +1,281 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Seg7_Dev32_drc.vf
+// /___/   /\     Timestamp : 11/20/2016 01:34:46
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog Seg7_Dev32_drc.vf -w F:/MyDocuments/framework/Seg7_Dev32.sch
+//Design Name: Seg7_Dev32
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MUX2T1_8_MUSER_Seg7_Dev32(I0, 
+                                 I1, 
+                                 s, 
+                                 O);
+
+    input [7:0] I0;
+    input [7:0] I1;
+    input s;
+   output [7:0] O;
+   
+   wire XLXN_41;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire XLXN_61;
+   wire XLXN_62;
+   wire XLXN_63;
+   wire XLXN_64;
+   wire XLXN_65;
+   wire XLXN_66;
+   wire XLXN_67;
+   wire XLXN_68;
+   wire XLXN_69;
+   wire XLXN_70;
+   wire XLXN_71;
+   wire XLXN_72;
+   wire XLXN_73;
+   wire XLXN_74;
+   
+   INV  XLXI_1 (.I(s), 
+               .O(XLXN_41));
+   AND2  XLXI_21 (.I0(I0[0]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_59));
+   AND2  XLXI_22 (.I0(I1[0]), 
+                 .I1(s), 
+                 .O(XLXN_60));
+   AND2  XLXI_23 (.I0(I0[1]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_61));
+   AND2  XLXI_24 (.I0(I1[1]), 
+                 .I1(s), 
+                 .O(XLXN_62));
+   AND2  XLXI_25 (.I0(I0[2]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_63));
+   AND2  XLXI_26 (.I0(I1[2]), 
+                 .I1(s), 
+                 .O(XLXN_64));
+   AND2  XLXI_27 (.I0(I0[3]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_65));
+   AND2  XLXI_28 (.I0(I1[3]), 
+                 .I1(s), 
+                 .O(XLXN_66));
+   AND2  XLXI_29 (.I0(I0[4]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_67));
+   AND2  XLXI_30 (.I0(I1[4]), 
+                 .I1(s), 
+                 .O(XLXN_68));
+   AND2  XLXI_31 (.I0(I0[5]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_69));
+   AND2  XLXI_32 (.I0(I1[5]), 
+                 .I1(s), 
+                 .O(XLXN_70));
+   AND2  XLXI_33 (.I0(I0[6]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_71));
+   AND2  XLXI_34 (.I0(I1[6]), 
+                 .I1(s), 
+                 .O(XLXN_72));
+   AND2  XLXI_35 (.I0(I0[7]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_73));
+   AND2  XLXI_36 (.I0(I1[7]), 
+                 .I1(s), 
+                 .O(XLXN_74));
+   OR2  XLXI_37 (.I0(XLXN_60), 
+                .I1(XLXN_59), 
+                .O(O[0]));
+   OR2  XLXI_38 (.I0(XLXN_62), 
+                .I1(XLXN_61), 
+                .O(O[1]));
+   OR2  XLXI_39 (.I0(XLXN_64), 
+                .I1(XLXN_63), 
+                .O(O[2]));
+   OR2  XLXI_40 (.I0(XLXN_66), 
+                .I1(XLXN_65), 
+                .O(O[3]));
+   OR2  XLXI_41 (.I0(XLXN_68), 
+                .I1(XLXN_67), 
+                .O(O[4]));
+   OR2  XLXI_42 (.I0(XLXN_70), 
+                .I1(XLXN_69), 
+                .O(O[5]));
+   OR2  XLXI_43 (.I0(XLXN_72), 
+                .I1(XLXN_71), 
+                .O(O[6]));
+   OR2  XLXI_44 (.I0(XLXN_74), 
+                .I1(XLXN_73), 
+                .O(O[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module Seg_map_MUSER_Seg7_Dev32(Hexs, 
+                                Scan, 
+                                Seg_map);
+
+    input [31:0] Hexs;
+    input [2:0] Scan;
+   output [7:0] Seg_map;
+   
+   
+   MUX4T1_4  XLXI_1 (.I0(Hexs[3:0]), 
+                    .I1(Hexs[11:8]), 
+                    .I2(Hexs[19:16]), 
+                    .I3(Hexs[27:24]), 
+                    .s(Scan[1:0]), 
+                    .O(Seg_map[3:0]));
+   MUX4T1_4  XLXI_2 (.I0(Hexs[7:4]), 
+                    .I1(Hexs[15:12]), 
+                    .I2(Hexs[23:20]), 
+                    .I3(Hexs[31:28]), 
+                    .s(Scan[1:0]), 
+                    .O(Seg_map[7:4]));
+endmodule
+`timescale 1ns / 1ps
+
+module ScanSync8T1_4_MUSER_Seg7_Dev32(Hexs, 
+                                      LES, 
+                                      point, 
+                                      Scan, 
+                                      AN, 
+                                      Hexo, 
+                                      LE, 
+                                      p);
+
+    input [31:0] Hexs;
+    input [7:0] LES;
+    input [7:0] point;
+    input [2:0] Scan;
+   output [3:0] AN;
+   output [3:0] Hexo;
+   output LE;
+   output p;
+   
+   wire [7:0] COM;
+   wire G0;
+   wire [7:0] Hex;
+   wire V5;
+   
+   MUX8T1_8  XLXI_2 (.MI0({LES[0], point[0], G0, G0, V5, V5, V5, G0}), 
+                    .MI1({LES[1], point[1], G0, G0, V5, V5, G0, V5}), 
+                    .MI2({LES[2], point[2], G0, G0, V5, G0, V5, V5}), 
+                    .MI3({LES[3], point[3], G0, G0, G0, V5, V5, V5}), 
+                    .MI4({LES[4], point[4], G0, G0, V5, V5, V5, G0}), 
+                    .MI5({LES[5], point[5], G0, G0, V5, V5, G0, V5}), 
+                    .MI6({LES[6], point[6], G0, G0, V5, G0, V5, V5}), 
+                    .MI7({LES[7], point[7], G0, G0, G0, V5, V5, V5}), 
+                    .S(Scan[2:0]), 
+                    .O(COM[7:0]));
+   VCC  XLXI_3 (.P(V5));
+   GND  XLXI_4 (.G(G0));
+   MUX8T1_8  XLXI_5 (.MI0({Hexs[3:0], G0, G0, G0, G0}), 
+                    .MI1({Hexs[7:4], G0, G0, G0, G0}), 
+                    .MI2({Hexs[11:8], G0, G0, G0, G0}), 
+                    .MI3({Hexs[15:12], G0, G0, G0, G0}), 
+                    .MI4({Hexs[19:16], G0, G0, G0, G0}), 
+                    .MI5({Hexs[23:20], G0, G0, G0, G0}), 
+                    .MI6({Hexs[27:24], G0, G0, G0, G0}), 
+                    .MI7({Hexs[31:28], G0, G0, G0, G0}), 
+                    .S(Scan[2:0]), 
+                    .O(Hex[7:0]));
+   BUF  XLXI_6 (.I(Hex[7]), 
+               .O(Hexo[3]));
+   BUF  XLXI_7 (.I(Hex[6]), 
+               .O(Hexo[2]));
+   BUF  XLXI_8 (.I(Hex[5]), 
+               .O(Hexo[1]));
+   BUF  XLXI_9 (.I(Hex[4]), 
+               .O(Hexo[0]));
+   BUF  XLXI_10 (.I(COM[3]), 
+                .O(AN[3]));
+   BUF  XLXI_11 (.I(COM[2]), 
+                .O(AN[2]));
+   BUF  XLXI_12 (.I(COM[1]), 
+                .O(AN[1]));
+   BUF  XLXI_13 (.I(COM[0]), 
+                .O(AN[0]));
+   BUF  XLXI_14 (.I(COM[7]), 
+                .O(LE));
+   BUF  XLXI_15 (.I(COM[6]), 
+                .O(p));
+endmodule
+`timescale 1ns / 1ps
+
+module Seg7_Dev32(flash_clk, 
+                  Hexs, 
+                  LES, 
+                  point, 
+                  Scan, 
+                  SW0, 
+                  AN, 
+                  SEGMENT);
+
+    input flash_clk;
+    input [31:0] Hexs;
+    input [7:0] LES;
+    input [7:0] point;
+    input [2:0] Scan;
+    input SW0;
+   output [3:0] AN;
+   output [7:0] SEGMENT;
+   
+   wire G0;
+   wire [3:0] Hex;
+   wire [7:0] SEG_TXT;
+   wire V5;
+   wire XLXN_4;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire [7:0] XLXN_23;
+   
+   MC14495_ZJU  XLXI_1 (.D0(Hex[0]), 
+                       .D1(Hex[1]), 
+                       .D2(Hex[2]), 
+                       .D3(Hex[3]), 
+                       .LE(XLXN_7), 
+                       .point(XLXN_4), 
+                       .a(SEG_TXT[0]), 
+                       .b(SEG_TXT[1]), 
+                       .c(SEG_TXT[2]), 
+                       .d(SEG_TXT[3]), 
+                       .e(SEG_TXT[4]), 
+                       .f(SEG_TXT[5]), 
+                       .g(SEG_TXT[6]), 
+                       .p(SEG_TXT[7]));
+   AND2  XLXI_2 (.I0(XLXN_6), 
+                .I1(flash_clk), 
+                .O(XLXN_7));
+   ScanSync8T1_4_MUSER_Seg7_Dev32  XLXI_3 (.Hexs(Hexs[31:0]), 
+                                          .LES(LES[7:0]), 
+                                          .point(point[7:0]), 
+                                          .Scan(Scan[2:0]), 
+                                          .AN(AN[3:0]), 
+                                          .Hexo(Hex[3:0]), 
+                                          .LE(XLXN_4), 
+                                          .p(XLXN_6));
+   VCC  XLXI_4 (.P(V5));
+   GND  XLXI_6 (.G(G0));
+   Seg_map_MUSER_Seg7_Dev32  XLXI_7 (.Hexs(Hexs[31:0]), 
+                                    .Scan(Scan[2:0]), 
+                                    .Seg_map(XLXN_23[7:0]));
+   MUX2T1_8_MUSER_Seg7_Dev32  XLXI_8 (.I0(XLXN_23[7:0]), 
+                                     .I1(SEG_TXT[7:0]), 
+                                     .s(SW0), 
+                                     .O(SEGMENT[7:0]));
+endmodule

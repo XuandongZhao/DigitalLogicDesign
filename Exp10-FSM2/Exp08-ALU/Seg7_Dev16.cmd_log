@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev16_drc.vf -w F:/MyDocuments/framework/Seg7_Dev16.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev16_drc.vf -w F:/MyDocuments/framework/Seg7_Dev16.sch 

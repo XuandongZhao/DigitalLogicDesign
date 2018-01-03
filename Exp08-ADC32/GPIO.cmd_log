@@ -1,0 +1,4 @@
+vhdtdtfi -lib work D:/ISE/Exp08-ADC32/Code/GPIO.v -lang verilog -prj Exp08-ADC32 -o GPIO.spl -module GPIO -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 GPIO.spl D:/ISE/Exp08-ADC32/GPIO.sym 
+vhdtdtfi -lib work D:/ISE/Exp08-ADC32/Code/GPIO.v -lang verilog -prj Exp08-ADC32 -o GPIO.spl -module GPIO -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 GPIO.spl D:/ISE/Exp08-ADC32/GPIO.sym 

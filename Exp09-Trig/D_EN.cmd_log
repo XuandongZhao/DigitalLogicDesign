@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym D_EN D:/ISE/Exp09-Trig/Code/D_EN.sch D:/ISE/Exp09-Trig/D_EN.sym 

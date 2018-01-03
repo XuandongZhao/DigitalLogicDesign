@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Counter_4bit_drc.vf -w {H:/LCDF/experiment by qingsong/exp_10/FSM/code/Counter_4bit.sch} 
+sch2sym -intstyle ise -family kintex7 -refsym Counter_4bit {H:/LCDF/experiment by qingsong/exp_10/FSM/code/Counter_4bit.sch} {H:/LCDF/experiment by qingsong/exp_10/FSM/Counter_4bit.sym} 
+sch2hdl -intstyle ise -family kintex7 -verilog Counter_4bit_drc.vf -w {H:/LCDF/experiment by qingsong/exp_10/FSM/code/Counter_4bit.sch} 
+sch2sym -intstyle ise -family kintex7 -refsym Counter_4bit {H:/LCDF/experiment by qingsong/exp_10/FSM/code/Counter_4bit.sch} {H:/LCDF/experiment by qingsong/exp_10/FSM/Counter_4bit.sym} 
+sch2sym -intstyle ise -family kintex7 -w -refsym Counter_4bit {H:/LCDF/experiment by qingsong/exp_10/FSM/code/Counter_4bit.sch} {H:/LCDF/experiment by qingsong/exp_10/FSM/Counter_4bit.sym} 
+sch2hdl -intstyle ise -family kintex7 -verilog Counter_4bit_drc.vf -w {H:/LCDF/experiment by qingsong/exp_10/FSM/code/Counter_4bit.sch} 
+sch2sym -intstyle ise -family kintex7 -w -refsym Counter_4bit {H:/LCDF/experiment by qingsong/exp_10/FSM/code/Counter_4bit.sch} {H:/LCDF/experiment by qingsong/exp_10/FSM/Counter_4bit.sym} 

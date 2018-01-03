@@ -1,0 +1,8 @@
+select figure at 1101 1015 8 -branches -sn=1
+select figure at 1083 658 8 -branches -sn=1
+select figure at 1931 597 8 -branches -sn=1
+select figure at 1931 597 8 -branches -all -sn=1
+select figure at 1931 664 8 -branches -sn=1
+update symbols add
+select figure at 1973 1828 8 -branches -sn=1
+select figure at 1973 1828 8 -branches -all -sn=1

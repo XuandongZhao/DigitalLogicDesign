@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {H:/LCDF/experiment by qingsong/exp_10/FSM/code/counter_1s.v} -lang verilog -prj FSM -o counter_1s.spl -module counter_1s -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w counter_1s.spl {H:/LCDF/experiment by qingsong/exp_10/FSM/counter_1s.sym} 

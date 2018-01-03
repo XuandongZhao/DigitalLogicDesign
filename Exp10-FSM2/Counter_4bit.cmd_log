@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym Counter_4bit D:/ISE/Exp10-FSM/Code/Counter_4bit.sch D:/ISE/Exp10-FSM/Counter_4bit.sym 

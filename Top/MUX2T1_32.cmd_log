@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/ISE/Top/Code/MUX2T1_32.v -lang verilog -prj Top -o MUX2T1_32.spl -module MUX2T1_32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 MUX2T1_32.spl D:/ISE/Top/MUX2T1_32.sym 

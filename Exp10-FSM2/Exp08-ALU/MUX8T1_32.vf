@@ -1,0 +1,86 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MUX8T1_32.vf
+// /___/   /\     Timestamp : 11/15/2016 20:43:43
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog E:/shuziluojiproject/changesymbol/MUX8T1_32.vf -w E:/shuziluojiproject/changesymbol/MUX8T1_32.sch
+//Design Name: MUX8T1_32
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MUX8T1_32(I0, 
+                 I1, 
+                 I2, 
+                 I3, 
+                 I4, 
+                 I5, 
+                 I6, 
+                 I7, 
+                 S, 
+                 O);
+
+    input [31:0] I0;
+    input [31:0] I1;
+    input [31:0] I2;
+    input [31:0] I3;
+    input [31:0] I4;
+    input [31:0] I5;
+    input [31:0] I6;
+    input [31:0] I7;
+    input [2:0] S;
+   output [31:0] O;
+   
+   
+   MUX8T1_8  XLXI_9 (.MI0(I0[7:0]), 
+                    .MI1(I1[7:0]), 
+                    .MI2(I2[7:0]), 
+                    .MI3(I3[7:0]), 
+                    .MI4(I4[7:0]), 
+                    .MI5(I5[7:0]), 
+                    .MI6(I6[7:0]), 
+                    .MI7(I7[7:0]), 
+                    .S(S[2:0]), 
+                    .O(O[7:0]));
+   MUX8T1_8  XLXI_10 (.MI0(I0[15:8]), 
+                     .MI1(I1[15:8]), 
+                     .MI2(I2[15:8]), 
+                     .MI3(I3[15:8]), 
+                     .MI4(I4[15:8]), 
+                     .MI5(I5[15:8]), 
+                     .MI6(I6[15:8]), 
+                     .MI7(I7[15:8]), 
+                     .S(S[2:0]), 
+                     .O(O[15:8]));
+   MUX8T1_8  XLXI_11 (.MI0(I0[23:16]), 
+                     .MI1(I1[23:16]), 
+                     .MI2(I2[23:16]), 
+                     .MI3(I3[23:16]), 
+                     .MI4(I4[23:16]), 
+                     .MI5(I5[23:16]), 
+                     .MI6(I6[23:16]), 
+                     .MI7(I7[23:16]), 
+                     .S(S[2:0]), 
+                     .O(O[23:16]));
+   MUX8T1_8  XLXI_12 (.MI0(I0[31:24]), 
+                     .MI1(I1[31:24]), 
+                     .MI2(I2[31:24]), 
+                     .MI3(I3[31:24]), 
+                     .MI4(I4[31:24]), 
+                     .MI5(I5[31:24]), 
+                     .MI6(I6[31:24]), 
+                     .MI7(I7[31:24]), 
+                     .S(S[2:0]), 
+                     .O(O[31:24]));
+endmodule

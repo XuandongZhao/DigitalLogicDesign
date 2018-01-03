@@ -1,0 +1,28 @@
+Command line:
+   lamp_zxd_lamp_zxd_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60807
+
+Wed Nov 02 10:45:57 2016
+
+
+ Elaboration Time: 0.28125 sec
+
+ Current Memory Usage: 865.468 Meg
+
+ Total Signals          : 65
+ Total Nets             : 33
+ Total Signal Drivers   : 25
+ Total Blocks           : 20
+ Total Primitive Blocks : 18
+ Total Processes        : 27
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 148
+
+ Total Simulation Time: 0.328125 sec
+
+ Current Memory Usage: 708.182 Meg
+
+Wed Nov 02 10:47:04 2016
+

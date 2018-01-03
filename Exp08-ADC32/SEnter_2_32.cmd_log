@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/ISE/Exp08-ADC32/Code/SEnter_2_32.v -lang verilog -prj Exp08-ADC32 -o SEnter_2_32.spl -module SEnter_2_32 -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 SEnter_2_32.spl D:/ISE/Exp08-ADC32/SEnter_2_32.sym 

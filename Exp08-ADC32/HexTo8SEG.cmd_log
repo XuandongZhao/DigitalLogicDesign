@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/ISE/Exp08-ADC32/Code/HexTo8SEG.v -lang verilog -prj Exp08-ADC32 -o HexTo8SEG.spl -module HexTo8SEG -template D:/Software/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 HexTo8SEG.spl D:/ISE/Exp08-ADC32/HexTo8SEG.sym 

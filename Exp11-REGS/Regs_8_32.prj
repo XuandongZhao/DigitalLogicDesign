@@ -1,0 +1,5 @@
+verilog work "MUX441.vf"
+verilog work "MUX8T1_8.vf"
+verilog work "code/Reg_32.v"
+verilog work "MUX8T1_32.vf"
+verilog work "code/Regs_8_32.v"

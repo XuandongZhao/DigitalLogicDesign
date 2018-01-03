@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym MB_DFF D:/ISE/Exp09-Trig/Code/MB_DFF.sch D:/ISE/Exp09-Trig/MB_DFF.sym 

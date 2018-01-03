@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym MUX2T1_64 D:/ISE/Top/Code/MUX2T1_64.sch D:/ISE/Top/MUX2T1_64.sym 

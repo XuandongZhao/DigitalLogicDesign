@@ -1,0 +1,3 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp09-Locker/D_EN.vf,-w,D:/ISE/Exp09-Locker/Code/D_EN.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp09-Locker/RS_NAND.vf,-w,D:/ISE/Exp09-Locker/Code/RS_NAND.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/ISE/Exp09-Locker/RS_EN.vf,-w,D:/ISE/Exp09-Locker/RS_EN.sch

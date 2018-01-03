@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/ISE/Exp06-Hex27Seg/MC14495_ZJU.xst" -ofn "D:/ISE/Exp06-Hex27Seg/MC14495_ZJU.syr" 
+sch2hdl -intstyle ise -family kintex7 -verilog MC14495_ZJU_drc.vf -w D:/ISE/Exp06-Hex27Seg/Code/MC14495_ZJU.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MC14495_ZJU D:/ISE/Exp06-Hex27Seg/Code/MC14495_ZJU.sch D:/ISE/Exp06-Hex27Seg/MC14495_ZJU.sym 
+xst -intstyle ise -ifn "D:/ISE/Exp06-Hex27Seg/MC14495_ZJU.xst" -ofn "D:/ISE/Exp06-Hex27Seg/MC14495_ZJU.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym MC14495_ZJU D:/ISE/Exp06-Hex27Seg/Code/MC14495_ZJU.sch D:/ISE/Exp06-Hex27Seg/MC14495_ZJU.sym 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w D:/ISE/Exp06-Hex27Seg/Code/MC14495_ZJU.sch MC14495_ZJU.tfi 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-2L MC14495_ZJU.ngc MC14495_ZJU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MC14495_ZJU_map.ncd MC14495_ZJU.ngd MC14495_ZJU.pcf 
+sch2sym -intstyle ise -family kintex7 -refsym MC14495_ZJU D:/ISE/Exp06-Hex27Seg/Code/MC14495_ZJU.sch D:/ISE/Exp06-Hex27Seg/MC14495_ZJU.sym 
+sch2sym -intstyle ise -family kintex7 -refsym MC14495_ZJU D:/ISE/Exp06-Hex27Seg/Code/MC14495_ZJU.sch D:/ISE/Exp06-Hex27Seg/MC14495_ZJU.sym 

@@ -1,0 +1,235 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Display.vf
+// /___/   /\     Timestamp : 11/25/2016 16:35:20
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/ISE/Exp08-ALU/Display.vf -w D:/ISE/Exp08-ALU/Display.sch
+//Design Name: Display
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module SSeg_map_MUSER_Display(Disp_num, 
+                              Seg_map);
+
+    input [63:0] Disp_num;
+   output [63:0] Seg_map;
+   
+   
+   BUF  XLXI_1 (.I(Disp_num[63:0]), 
+               .O(Seg_map[63:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module MUX2T1_8_MUSER_Display(I0, 
+                              I1, 
+                              s, 
+                              O);
+
+    input [7:0] I0;
+    input [7:0] I1;
+    input s;
+   output [7:0] O;
+   
+   wire XLXN_41;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire XLXN_61;
+   wire XLXN_62;
+   wire XLXN_63;
+   wire XLXN_64;
+   wire XLXN_65;
+   wire XLXN_66;
+   wire XLXN_67;
+   wire XLXN_68;
+   wire XLXN_69;
+   wire XLXN_70;
+   wire XLXN_71;
+   wire XLXN_72;
+   wire XLXN_73;
+   wire XLXN_74;
+   
+   INV  XLXI_1 (.I(s), 
+               .O(XLXN_41));
+   AND2  XLXI_21 (.I0(I0[0]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_59));
+   AND2  XLXI_22 (.I0(I1[0]), 
+                 .I1(s), 
+                 .O(XLXN_60));
+   AND2  XLXI_23 (.I0(I0[1]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_61));
+   AND2  XLXI_24 (.I0(I1[1]), 
+                 .I1(s), 
+                 .O(XLXN_62));
+   AND2  XLXI_25 (.I0(I0[2]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_63));
+   AND2  XLXI_26 (.I0(I1[2]), 
+                 .I1(s), 
+                 .O(XLXN_64));
+   AND2  XLXI_27 (.I0(I0[3]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_65));
+   AND2  XLXI_28 (.I0(I1[3]), 
+                 .I1(s), 
+                 .O(XLXN_66));
+   AND2  XLXI_29 (.I0(I0[4]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_67));
+   AND2  XLXI_30 (.I0(I1[4]), 
+                 .I1(s), 
+                 .O(XLXN_68));
+   AND2  XLXI_31 (.I0(I0[5]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_69));
+   AND2  XLXI_32 (.I0(I1[5]), 
+                 .I1(s), 
+                 .O(XLXN_70));
+   AND2  XLXI_33 (.I0(I0[6]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_71));
+   AND2  XLXI_34 (.I0(I1[6]), 
+                 .I1(s), 
+                 .O(XLXN_72));
+   AND2  XLXI_35 (.I0(I0[7]), 
+                 .I1(XLXN_41), 
+                 .O(XLXN_73));
+   AND2  XLXI_36 (.I0(I1[7]), 
+                 .I1(s), 
+                 .O(XLXN_74));
+   OR2  XLXI_37 (.I0(XLXN_60), 
+                .I1(XLXN_59), 
+                .O(O[0]));
+   OR2  XLXI_38 (.I0(XLXN_62), 
+                .I1(XLXN_61), 
+                .O(O[1]));
+   OR2  XLXI_39 (.I0(XLXN_64), 
+                .I1(XLXN_63), 
+                .O(O[2]));
+   OR2  XLXI_40 (.I0(XLXN_66), 
+                .I1(XLXN_65), 
+                .O(O[3]));
+   OR2  XLXI_41 (.I0(XLXN_68), 
+                .I1(XLXN_67), 
+                .O(O[4]));
+   OR2  XLXI_42 (.I0(XLXN_70), 
+                .I1(XLXN_69), 
+                .O(O[5]));
+   OR2  XLXI_43 (.I0(XLXN_72), 
+                .I1(XLXN_71), 
+                .O(O[6]));
+   OR2  XLXI_44 (.I0(XLXN_74), 
+                .I1(XLXN_73), 
+                .O(O[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module MUX2T1_64_MUSER_Display(I0, 
+                               I1, 
+                               s, 
+                               O);
+
+    input [63:0] I0;
+    input [63:0] I1;
+    input s;
+   output [63:0] O;
+   
+   
+   MUX2T1_8_MUSER_Display  XLXI_1 (.I0(I0[7:0]), 
+                                  .I1(I1[7:0]), 
+                                  .s(s), 
+                                  .O(O[7:0]));
+   MUX2T1_8_MUSER_Display  XLXI_2 (.I0(I0[15:8]), 
+                                  .I1(I1[15:8]), 
+                                  .s(s), 
+                                  .O(O[15:8]));
+   MUX2T1_8_MUSER_Display  XLXI_3 (.I0(I0[23:16]), 
+                                  .I1(I1[23:16]), 
+                                  .s(s), 
+                                  .O(O[23:16]));
+   MUX2T1_8_MUSER_Display  XLXI_4 (.I0(I0[31:24]), 
+                                  .I1(I1[31:24]), 
+                                  .s(s), 
+                                  .O(O[31:24]));
+   MUX2T1_8_MUSER_Display  XLXI_5 (.I0(I0[39:32]), 
+                                  .I1(I1[39:32]), 
+                                  .s(s), 
+                                  .O(O[39:32]));
+   MUX2T1_8_MUSER_Display  XLXI_6 (.I0(I0[47:40]), 
+                                  .I1(I1[47:40]), 
+                                  .s(s), 
+                                  .O(O[47:40]));
+   MUX2T1_8_MUSER_Display  XLXI_7 (.I0(I0[55:48]), 
+                                  .I1(I1[55:48]), 
+                                  .s(s), 
+                                  .O(O[55:48]));
+   MUX2T1_8_MUSER_Display  XLXI_8 (.I0(I0[63:56]), 
+                                  .I1(I1[63:56]), 
+                                  .s(s), 
+                                  .O(O[63:56]));
+endmodule
+`timescale 1ns / 1ps
+
+module Display(clk, 
+               flash, 
+               Hexs, 
+               LES, 
+               point, 
+               rst, 
+               Start, 
+               SW0, 
+               seg_clk, 
+               seg_clrn, 
+               SEG_PEN, 
+               seg_sout);
+
+    input clk;
+    input flash;
+    input [31:0] Hexs;
+    input [7:0] LES;
+    input [7:0] point;
+    input rst;
+    input Start;
+    input SW0;
+   output seg_clk;
+   output seg_clrn;
+   output SEG_PEN;
+   output seg_sout;
+   
+   wire [63:0] XLXN_10;
+   wire [63:0] XLXN_12;
+   wire [63:0] XLXN_14;
+   
+   P2S  XLXI_1 (.clk(clk), 
+               .P_Data(XLXN_10[63:0]), 
+               .rst(rst), 
+               .Serial(Start), 
+               .EN(SEG_PEN), 
+               .sout(seg_sout), 
+               .s_clk(seg_clk), 
+               .s_clrn(seg_clrn));
+   MUX2T1_64_MUSER_Display  XLXI_2 (.I0(XLXN_14[63:0]), 
+                                   .I1(XLXN_12[63:0]), 
+                                   .s(SW0), 
+                                   .O(XLXN_10[63:0]));
+   SSeg_map_MUSER_Display  XLXI_3 (.Disp_num({Hexs[31:0], Hexs[31:0]}), 
+                                  .Seg_map(XLXN_12[63:0]));
+   HexTo8SEG  XLXI_5 (.flash(flash), 
+                     .Hexs(Hexs[31:0]), 
+                     .LES(LES[7:0]), 
+                     .points(point[7:0]), 
+                     .SEG_TXT(XLXN_14[63:0]));
+endmodule

@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family kintex7 -w -refsym MUX2T1_64 D:/ISE/Exp08-ADC32/Code/MUX2T1_64.sch D:/ISE/Exp08-ADC32/MUX2T1_64.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym MUX2T1_64 D:/ISE/Exp08-ADC32/Code/MUX2T1_64.sch D:/ISE/Exp08-ADC32/MUX2T1_64.sym 

@@ -1,0 +1,4 @@
+vhdtdtfi -lib work {H:/LCDF/experiment by qingsong/exp_10/FSM/code/counter_32_rev.v} -lang verilog -prj FSM -o counter_32_rev.spl -module counter_32_rev -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w counter_32_rev.spl {H:/LCDF/experiment by qingsong/exp_10/FSM/counter_32_rev.sym} 
+vhdtdtfi -lib work {H:/LCDF/experiment by qingsong/exp_10/FSM/code/counter_32_rev.v} -lang verilog -prj FSM -o counter_32_rev.spl -module counter_32_rev -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w counter_32_rev.spl {H:/LCDF/experiment by qingsong/exp_10/FSM/counter_32_rev.sym} 

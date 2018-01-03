@@ -1,0 +1,7 @@
+sch2sym -intstyle ise -family kintex7 -refsym Display D:/ISE/Exp08-ADC32/Code/Display.sch D:/ISE/Exp08-ADC32/Display.sym 
+sch2sym -intstyle ise -family kintex7 -refsym Display D:/ISE/Exp08-ADC32/Code/Display.sch D:/ISE/Exp08-ADC32/Display.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym Display D:/ISE/Exp08-ADC32/Code/Display.sch D:/ISE/Exp08-ADC32/Display.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym Display D:/ISE/Exp08-ADC32/Code/Display.sch D:/ISE/Exp08-ADC32/Display.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym Display D:/ISE/Exp08-ADC32/Code/Display.sch D:/ISE/Exp08-ADC32/Display.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym Display D:/ISE/Exp08-ADC32/Code/Display.sch D:/ISE/Exp08-ADC32/Display.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym Display D:/ISE/Exp08-ADC32/Code/Display.sch D:/ISE/Exp08-ADC32/Display.sym 
